@@ -1,0 +1,565 @@
+<!DOCTYPE HTML>
+<!--
+	TXT by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Our History</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+		<link rel="stylesheet" href="assets/css/main.css" />
+
+		<script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+
+
+		<style>
+
+			h1, h2, h3, h4 {
+				color: #203e64;
+			}
+
+			ul li {
+				margin-left: 0;
+				padding-left: 0;
+			}
+
+			.tlbody {
+			background-color: #d4d4d4;
+			font-family: Helvetica, sans-serif;
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+			}
+
+						/* The actual timeline (the vertical ruler) */
+			.timeline {
+			position: relative;
+			max-width: 1200px;
+			margin: 0 auto;
+			}
+
+			/* The actual timeline (the vertical ruler) */
+			.timeline::after {
+			content: '';
+			position: absolute;
+			width: 6px;
+			background-color: white;
+			top: 0;
+			bottom: 0;
+			left: 50%;
+			margin-left: -3px;
+			}
+
+			/* Container around content */
+			.tlcontainer {
+			padding: 10px 40px;
+			position: relative;
+			background-color: inherit;
+			width: 50%;
+			
+			}
+
+			/* The circles on the timeline */
+			.tlcontainer::after {
+			content: '';
+			position: absolute;
+			width: 25px;
+			height: 25px;
+			right: -17px;
+			background-color: white;
+			border: 4px solid #FF9F55;
+			top: 15px;
+			border-radius: 50%;
+			z-index: 1;
+			
+			}
+
+			/* Place the container to the left */
+			.tlleft {
+			left: 0;
+			}
+
+			/* Place the container to the right */
+			.tlright {
+			left: 50%;
+			}
+
+			/* Add arrows to the left container (pointing right) */
+			.tlleft::before {
+			content: " ";
+			height: 0;
+			position: absolute;
+			top: 22px;
+			width: 0;
+			z-index: 1;
+			right: 30px;
+			border: medium solid white;
+			border-width: 10px 0 10px 10px;
+			border-color: transparent transparent transparent white;
+			}
+
+			/* Add arrows to the right container (pointing left) */
+			.tlright::before {
+			content: " ";
+			height: 0;
+			position: absolute;
+			top: 22px;
+			width: 0;
+			z-index: 1;
+			left: 30px;
+			border: medium solid white;
+			border-width: 10px 10px 10px 0;
+			border-color: transparent white transparent transparent;
+			}
+
+			/* Fix the circle for containers on the right side */
+			.tlright::after {
+			left: -16px;
+			}
+
+			/* The actual content */
+			.tlcontent {
+			background-color: white;
+			position: relative;
+			border-radius: 30px;
+
+			}
+
+
+			/* Media queries - Responsive timeline on screens less than 600px wide */
+			@media screen and (max-width: 600px) {
+			/* Place the timelime to the left */
+			.tltimeline::after {
+			left: 31px;
+			}
+			
+			/* Full-width containers */
+			.tlcontainer {
+			width: 100%;
+			padding-left: 70px;
+			padding-right: 25px;
+			}
+			
+			/* Make sure that all arrows are pointing leftwards */
+			.tlcontainer::before {
+			left: 60px;
+			border: medium solid white;
+			border-width: 10px 10px 10px 0;
+			border-color: transparent white transparent transparent;
+			}
+
+			/* Make sure all circles are at the same spot */
+			.tlleft::after, .tlright::after {
+			left: 15px;
+			}
+			
+			/* Make all right containers behave like the left ones */
+			.tlright {
+			left: 0%;
+			}
+			}
+
+
+
+			.rotate.down{
+				-ms-transform: rotate(180deg);
+				-moz-transform: rotate(180deg);
+				-webkit-transform: rotate(180deg);
+				transform: rotate(180deg);
+			}
+
+			.clearfix {
+				overflow: auto;
+			}
+
+			.timeline button {
+				width: 100%;
+			}
+
+		</style>
+	</head>
+	<body class="is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+			<header id="header">
+				<div class="logo container">
+					<div>
+						<h1><a href="index.html" id="logo">
+							<img src="images/fmclogo.jpg" alt="logo" />
+						</a></h1>
+						<!-- <p>Friendship Medical Clinic</p> -->
+					</div>
+				</div>
+			</header>
+			<!-- Nav -->
+			<nav id="nav">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="covid.html">COVID-19</a></li>
+					<li class="current">
+						<a href="about_us.html">Who We Are</a>
+						<ul>
+							<li><a href="about_us.html">About Us</a></li>
+							<li><a href="mission.html">Our Mission</a></li>
+							<li class="current"><a href="history.html">History</a></li>
+							<li><a href="team.html">Meet The Team</a></li>
+							<li><a href="the_board.html">Board Members</a></li>
+							<li><a href="benefits.html">Why We Benefit Everyone</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="how_to_help.html">Getting Involved</a>
+						<ul>
+							<li><a href="how_to_help.html">How You Can Help</a></li>
+							<li><a href="volunteer.html">Voluenteering</a></li>
+							<li><a href="giving.html">Giving</a></li>
+						</ul>
+					</li>
+					<li><a href="success_stories.html">Success Stories</a></li>
+					<li><a href="contact.html">Contact Us</a></li>
+				</ul>
+			</nav>
+
+			<!-- Main -->
+				<section id="main">
+					<!-- <div class="container-fluid">
+
+						<div class="row">
+							<div class="col-12">
+								<div class="content">
+									<span class="image featured">
+										<img src="images/beach.jpg" alt="" style="height: 35em; object-fit: cover; border-bottom: solid 35px #203e64;" />
+										<h2 class="imgtextcenter" style="color: rgb(38, 61, 97); 
+											font-size: 5.5em; text-transform: uppercase; text-align: center; padding-top: 50px">Our Clinic's History</h2>
+									</span>
+								</div>
+							</div>
+						</div>
+					</div> -->
+					<div class="container">
+						<div class="row">
+							<div class="col-3 col-12-medium">
+
+								<!-- Sidebar -->
+
+								<div class="sidebar" style="padding-top: 90px;">
+
+									<!-- Sidebar -->
+
+									<!-- Something -->
+									<section>
+												<h2 class="major"><span>Magna Feugiat</span></h2>
+												<p>
+													Donec sagittis massa et leo semper scele risque metus faucibus. Morbi congue mattis mi.
+													Phasellus sed nisl vitae risus tristique volutpat. Cras rutrum sed commodo luctus blandit.
+												</p>
+												<a href="#" class="button alt">Learn more</a>
+									</section>
+
+									<!-- Something -->
+									<section>
+												<h2 class="major"><span>Magna Feugiat</span></h2>
+												<a href="#" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
+
+												<p>
+													Rhoncus dui quis euismod. Maecenas lorem tellus, congue et condimentum ac, ullamcorper non sapien.
+													Donec sagittis massa et leo semper scele risque metus faucibus. Morbi congue mattis mi.
+													Phasellus sed nisl vitae risus tristique volutpat. Cras rutrum sed commodo luctus blandit.
+												</p>
+												<a href="#" class="button alt">Learn more</a>
+									</section>
+
+								</div>
+
+							</div>
+							<div class="col-9 col-12-medium imp-medium">
+								<div class="content">
+
+									<!-- Content -->
+
+									<article class="box page-content" style="padding-left: 5%; padding-top: 50px;">
+										
+										<header>
+											<h2>Our History</h2>
+											<p>Subheading for this page on the site</p>
+										</header>
+
+										<section>
+											<img src="images/beach.jpg" alt="" class="image featured" style="object-fit: cover; height: 20em;"/>
+
+												<p>
+													Founded in 1965, Friendship Medical Clinic & Pharmacy is the oldest <a href="#">free medical 
+													clinic</a> in South Carolina. As a <a href="#">501(c)(3) nonprofit organization</a>, the clinic provides 
+													a primary medical care home, as well as medications, for qualifying uninsured adults, 
+													through our full-service, state-licensed pharmacy located within the clinic.
+												</p>
+
+												<!-- Timeline -->
+
+												<h2>A Timeline Of Highlights</h2>
+												<div class="tlbody">
+													<div class="timeline">
+														<div class="tlcontainer tlleft">
+														  <div class="tlcontent">
+															<button onclick="document.getElementById('id01').style.display='block'" 
+																class="w3-button w3-hover-light-blue">
+																	<h2>1976</h2>
+																	<h3 style="text-align: left;font-size: large;">Community Of Volunteer Services (CVS)</h3>
+																</button>
+														  </div>
+														  
+														</div>
+														<div class="tlcontainer tlright">
+															<div class="tlcontent">
+																<button onclick="document.getElementById('id02').style.display='block'" 
+																class="w3-button w3-hover-light-blue">
+																	<h2>1980</h2>
+																	<h3 style="text-align: left;">The Friendship House</h3>
+																</button>
+															  </div>
+														</div>
+														<div class="tlcontainer tlleft">
+															<div class="tlcontent">
+																<button onclick="document.getElementById('id03').style.display='block'" 
+																class="w3-button w3-hover-light-blue">
+																	<h2>1997</h2>
+																	<h3 style="text-align: left;">A Pharmacy is Born</h3>
+																</button>
+															  </div>
+														</div>
+														<div class="tlcontainer tlright">
+															<div class="tlcontent">
+																<button onclick="document.getElementById('id04').style.display='block'" 
+																	class="w3-button w3-hover-light-blue">
+																	<h2>2001</h2>
+																	<h3 style="text-align: left;font-size:large;">Friendship Medical Clinic & Pharmacy</h3>
+																</button>	
+															</div>
+														</div>
+														
+													  </div>
+												</div>
+												
+												<!-- Modal -->
+
+												<div id="id01" class="w3-modal">
+													<div class="w3-modal-content w3-animate-top w3-card-4">
+													  <header class="w3-container w3-teal"> 
+														<span onclick="document.getElementById('id01').style.display='none'" 
+														class="w3-button w3-display-topright">&times;</span>
+														<h2 style="color: white;padding-top: 5px;text-transform: capitalize;">Community of Volunteer Services (CVS)</h2>
+													  </header>
+													  <div class="w3-container">
+														<ul style="font-size: large;">
+															<li>Patients are seen in private offices and outdoor mini-clinics.</li>
+															<li>Nurses, doctors and other volunteers interview, screen, make referrals and treat patients.</li>
+															<li>Prescription services and clinic card referral system are developed.</li>
+															<li>Budget increases from $5,000 (1969) to $7,500.</li>
+															<li>Community Volunteer Services (CVS) pays $500-$700 monthly for medications for those patients not 
+																able to buy their own.</li>
+															<li>Jerry Llewellyn, CVS director, is offered a 1930s barn, built from rough, unfinished lumber.</li>
+															<li>Money to move the barn comes from funds provided by United Way and an annual summer flea market 
+																fundraiser.</li>
+															<li>Myrtle Beach Farms generously provides a lease on an undeveloped lot on Canal Street.</li>
+															<li>Rainbow's End, a thrift shop, is created so that the communities have an affordable retail 
+																place to shop. The shop's revenue provides for operating funds for clinic.</li>
+														</ul>
+													  </div>
+													  <footer class="w3-container w3-teal">
+														
+													  </footer>
+													</div>
+												</div>
+
+												<div id="id01" class="w3-modal">
+													<div class="w3-modal-content w3-animate-top w3-card-4">
+													  <header class="w3-container w3-teal"> 
+														<span onclick="document.getElementById('id01').style.display='none'" 
+														class="w3-button w3-display-topright">&times;</span>
+														<h2 style="color: white;padding-top: 5px;text-transform: capitalize;">Community of Volunteer Services (CVS)</h2>
+													  </header>
+													  <div class="w3-container">
+														<ul style="font-size: large;">
+															<li>Patients are seen in private offices and outdoor mini-clinics.</li>
+															<li>Nurses, doctors and other volunteers interview, screen, make referrals and treat patients.</li>
+															<li>Prescription services and clinic card referral system are developed.</li>
+															<li>Budget increases from $5,000 (1969) to $7,500.</li>
+															<li>Community Volunteer Services (CVS) pays $500-$700 monthly for medications for those patients not 
+																able to buy their own.</li>
+															<li>Jerry Llewellyn, CVS director, is offered a 1930s barn, built from rough, unfinished lumber.</li>
+															<li>Money to move the barn comes from funds provided by United Way and an annual summer flea market 
+																fundraiser.</li>
+															<li>Myrtle Beach Farms generously provides a lease on an undeveloped lot on Canal Street.</li>
+															<li>Rainbow's End, a thrift shop, is created so that the communities have an affordable retail 
+																place to shop. The shop's revenue provides for operating funds for clinic.</li>
+														</ul>
+													  </div>
+													  <footer class="w3-container w3-teal">
+														<p></p>
+													  </footer>
+													</div>
+												</div>
+
+												<div id="id02" class="w3-modal">
+													<div class="w3-modal-content w3-animate-top w3-card-4">
+													  <header class="w3-container w3-teal"> 
+														<span onclick="document.getElementById('id02').style.display='none'" 
+														class="w3-button w3-display-topright">&times;</span>
+														<h2 style="color: white;padding-top: 5px;text-transform: capitalize;">The Friendship House</h2>
+													  </header>
+													  <div class="w3-container">
+														<ul style="font-size: large;">
+															<li>With a physical location, CVS turns into "Friendship House," and acquires a van, used primarily 
+																to transport elderly persons to other agencies assisting the community.</li>
+															<li>Operating budget increases to $60,000, and nearly 1,000 prescriptions are dispensed.</li>
+														</ul>
+													  </div>
+													  <footer class="w3-container w3-teal">
+														<p></p>
+													  </footer>
+													</div>
+												</div>
+
+												<div id="id03" class="w3-modal">
+													<div class="w3-modal-content w3-animate-top w3-card-4">
+													  <header class="w3-container w3-teal"> 
+														<span onclick="document.getElementById('id03').style.display='none'" 
+														class="w3-button w3-display-topright">&times;</span>
+														<h2 style="color: white;padding-top: 5px;text-transform: capitalize;">A Pharmacy Is Born</h2>
+													  </header>
+													  <div class="w3-container">
+														<ul style="font-size: large;">
+															<li>Sources for sample medications that doctors receive and dispense at the clinic are drying up 
+																and the clinic finds itself unable to purchase enough medications.</li>
+															<li>Patty Gresko, a licensed pharmacist, is asked to assist in setting up a state-licensed pharmacy 
+																and a Patient Assistance Program (PAP) that permits clinics to obtain medications for low-income patients.</li>
+															<li>At this point, the pharmacy is operating out of a closet, and patients have to wait outside until 
+																their name is called to see the doctor.</li>
+															<li>BEighteen years later, Gresko is still the pharmacist-in-charge, operating the pharmacy under her 
+																state license. Her comment when asked why she donates so much time, "I get way more out of it than I give."</li>
+														</ul>
+													  </div>
+													  <footer class="w3-container w3-teal">
+														<p></p>
+													  </footer>
+													</div>
+												</div>
+
+												<div id="id04" class="w3-modal">
+													<div class="w3-modal-content w3-animate-top w3-card-4">
+													  <header class="w3-container w3-teal"> 
+														<span onclick="document.getElementById('id04').style.display='none'" 
+														class="w3-button w3-display-topright">&times;</span>
+														<h2 style="color: white;padding-top: 5px;text-transform: capitalize;">Friendship Medical Clinic and Pharmacy</h2>
+													  </header>
+													  <div class="w3-container">
+														<ul style="font-size: large;">
+															<li>Friendship Medical Clinic & Pharmacy receives a $150,000, three-year grant from The Duke Endowment 
+																[link to: http://www.dukeendowment.org/program-areas/health-care] secured through the efforts of Conway Medical 
+																Center Foundation [link to: http://www.conwaymedicalcenter.com/CMCFoundation/AbouttheFoundation.aspx].</li>
+															<li>Friendship House changes its name to Friendship Medical Clinic & Pharmacy.</li>
+															<li>Prescription services and clinic card referral system are developed.</li>
+															<li>Budget increases from $5,000 (1969) to $7,500.</li>
+															<li>Community Volunteer Services (CVS) pays $500-$700 monthly for medications for those patients not 
+																able to buy their own.</li>
+															<li>Jerry Llewellyn, CVS director, is offered a 1930s barn, built from rough, unfinished lumber.</li>
+															<li>Money to move the barn comes from funds provided by United Way and an annual summer flea market 
+																fundraiser.</li>
+															<li>Myrtle Beach Farms generously provides a lease on an undeveloped lot on Canal Street.</li>
+															<li>Rainbow's End, a thrift shop, is created so that the communities have an affordable retail 
+																place to shop. The shop's revenue provides for operating funds for clinic.</li>
+														</ul>
+													  </div>
+													  <footer class="w3-container w3-teal">
+														<p></p>
+													  </footer>
+													</div>
+												</div>
+
+												<div style="padding-top: 90px;">
+													<h2>Serving Horry County Today</h2>
+												<p>
+													In 2014, over 8,000 prescriptions were dispensed for a retail value of $1,643,307. None of this would be possible 
+													without the 48 volunteer doctors, nurses, pharmacy technicians, pharmacists and clerical staff.
+													<br><br>
+													The clinic has come a long way since 1969 when the operating budget was $5000 and CVS was spending $300 - $400 monthly 
+													in medications. Fifty years later in 2015 the operating budget is $240,700.
+												</p>
+												</div>
+										</section>
+
+									</article>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+			<!-- Footer -->
+				<footer id="footer">
+					<div class="container">
+						<div class="row gtr-200">
+							
+							<div class="col-12">
+
+								<!-- Contact -->
+									<section>
+										<h2 class="major"><span>Get in touch</span></h2>
+										<ul class="contact">
+											<li><a class="icon brands fa-facebook-f" href="#"><span class="label">Facebook</span></a></li>
+											<li><a class="icon brands fa-twitter" href="#"><span class="label">Twitter</span></a></li>
+											<li><a class="icon brands fa-instagram" href="#"><span class="label">Instagram</span></a></li>
+											<li><a class="icon brands fa-dribbble" href="#"><span class="label">Dribbble</span></a></li>
+											<li><a class="icon brands fa-linkedin-in" href="#"><span class="label">LinkedIn</span></a></li>
+										</ul>
+									</section>
+
+							</div>
+						</div>
+
+						<!-- Copyright -->
+							<div id="copyright">
+								<ul class="menu">
+									<li>&copy; Untitled. All rights reserved</li>
+								</ul>
+							</div>
+
+					</div>
+				</footer>
+
+		</div>
+
+		<!-- Scripts -->
+		<script>
+			var acc = document.getElementsByClassName("accordion");
+			var i;
+			
+			for (i = 0; i < acc.length; i++) {
+			  acc[i].addEventListener("click", function() {
+				this.classList.toggle("acordactive");
+				
+				var panel = this.nextElementSibling;
+				if (panel.style.maxHeight) {
+				  panel.style.maxHeight = null;
+				} else {
+				  panel.style.maxHeight = panel.scrollHeight + "px";
+				} 
+			  });
+			}
+
+			/* $(".rotate").click(function(){
+   				$(this).toggleClass("down"); 
+			}); */
+			</script>
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

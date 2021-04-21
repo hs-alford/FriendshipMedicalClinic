@@ -100,7 +100,7 @@ input, select, textarea {
 	body, input, textarea, select {
 		font-family: 'Open Sans', sans-serif;
 		font-weight: 400;
-		color: #6b7770;
+		color: #686868;
 		font-size: 13pt;
 		line-height: 2em;
 	}
@@ -2625,9 +2625,12 @@ input, select, textarea {
 
 /* Header */
 
-	
-
 	#header {
+		text-align: center;
+		background-color: white;
+	}
+
+	/* #header {
 		text-align: center;
 		font-size: 2em;
 		font-family: 'Open Sans Condensed', sans-serif;
@@ -2641,30 +2644,29 @@ input, select, textarea {
 		#header .logo {
 			position: relative;
 			text-align: center;
-/* 			border-top: solid 5px #e7eae8;
- */			top: 0.65em;
-		}	
+			top: 0.65em;
+		}	 */
 
-			#header .logo div {
+			/* #header .logo div {
 				background: #fff;
 				position: relative;
 				display: inline-block;
 				padding: 0 1.5em 0 1.5em;
 				top: -0.65em;
 				
-			}
+			} */
 
-			#header .logo h1{
+			/* #header .logo h1{
 				width: 100%; 
 				text-align: center; 
-				/* border-bottom: solid 5px #e7eae8;  */
+				
 				
 				line-height: 0.1em;
 				margin: 0 20px;
 				display: inline; 
 			 }
-
-			 #header .logo h1 span { 
+ */
+			 /* #header .logo h1 span { 
 				background:#fff; 
 				padding:0 10px; 
 				
@@ -2673,7 +2675,7 @@ input, select, textarea {
 			#header .logo p {
 				display: inline;
 				color: #C1CAC5;
-			}
+			} */
 
 /* Nav */
 
@@ -2816,7 +2818,7 @@ input, select, textarea {
 
 /* Banner */
 
-	#banner {
+	/* #banner {
 		position: relative;
 		background-color: #4f88bd;
 		background-image: url("../../images/mesh-1430107_1280.png");
@@ -2826,10 +2828,8 @@ input, select, textarea {
 	}
 
 		#banner .content {
-			position: relative;
-			text-align: center;
-			
-			
+			position: absolute;
+			margin-top: 3em;
 		}
 
 			#banner .content h2 {
@@ -2849,20 +2849,7 @@ input, select, textarea {
 				
 			}
 
-			#banner .content .bannerleft {
-				float: left;
-				
-				margin-left: 5em;
-				margin-top: 8em;
-				width: 55%;
-			}
-
-			#banner .content .bannerright {
-				float: right;
-				margin-top: 7em;
-				margin-right: 9em;
-				
-			}
+			
 
 			#banner .content .button {
 				-moz-transition: border-color .2s ease-in-out, color .2s ease-in-out;
@@ -2886,7 +2873,72 @@ input, select, textarea {
 				#banner .content .button:active {
 					color: rgb(255, 255, 255);
 					border-color: #616763;
+				} */
+
+
+
+				#banner {
+					position: relative;
+					background-image: url("images/overlay.png"), url("images/overlay.png"), url("../../images/mesh-1430107_1280.png");
+					background-position: top left, top left, center center;
+					background-repeat: repeat, repeat, no-repeat;
+					background-size: auto, auto, cover;
+					z-index: 1;
+					padding: 4em 0 5em 0;
 				}
+			
+					#banner .content {
+						position: relative;
+						background-color: rgba(21, 28, 23, 0.884);
+						background-image: url("images/overlay.png"), url("images/highlight.png");
+						background-position: top left, center center;
+						background-size: auto, 100% 250%;
+						background-repeat: repeat, no-repeat;
+						text-align: center;
+						margin: 0 10em 0 10em;
+						padding: 2em 1em 2em 1em;
+					}
+			
+						#banner .content h2 {
+							color: #fff;
+							font-size: 2.95em;
+							margin: 0 0 0.5em 0;
+							font-weight: bold;
+						}
+			
+						#banner .content p {
+							display: block;
+							font-family: 'Open Sans Condensed', sans-serif;
+							font-weight: 700;
+							text-transform: uppercase;
+							color: #575d59;
+							font-size: 1.35em;
+							margin: 0 0 1.25em 0;
+						}
+			
+						#banner .content .button {
+							-moz-transition: border-color .2s ease-in-out, color .2s ease-in-out;
+							-webkit-transition: border-color .2s ease-in-out, color .2s ease-in-out;
+							-ms-transition: border-color .2s ease-in-out, color .2s ease-in-out;
+							transition: border-color .2s ease-in-out, color .2s ease-in-out;
+							color: #b4b7b5;
+							background: transparent !important;
+							border: solid 4px #575d59;
+							border-color: rgba(87, 93, 89, 0.35);
+							font-size: 1.5em;
+						}
+			
+							#banner .content .button:hover {
+								color: #e4e7e5;
+								border-color: rgba(87, 93, 89, 0.75);
+							}
+			
+							#banner .content .button:active {
+								color: #fff;
+								border-color: #616763;
+							}
+
+	
 
 /* Main */
 
@@ -2896,7 +2948,12 @@ input, select, textarea {
 		border-bottom: solid 5px #c1cac5;
 		border-top-width: 35px;
 		border-bottom-width: 10px;
-		padding: 0em 0 6em 0;
+		padding: 0em 0 2em 0;
+	}
+
+	header p {
+		color: #4f88bd;
+		text-transform: capitalize;
 	}
 
 /* Sidebar + Content */
@@ -2910,15 +2967,52 @@ input, select, textarea {
 			padding-left: 0;
 		}
 
+		.sidelinks a{
+			display: block;
+			border-bottom: solid 2px #a7a7a79f;
+			padding-bottom: 10px;
+			padding-top: 8px;
+			color: #696969;
+			font-weight:600;
+		}
+
+		.sidelinks a:link {
+			text-decoration: none;
+			color: #696969;
+		}
+
+		.sidelinks a:visited {
+			text-decoration: none;
+		}
+
+		.sidelinks a:hover {
+			color: #e97770;
+		}
+
+		.sidelinks a:active {
+			color: #e97770;
+		}
+
+		.sidelinks a.current {
+			color:#e97770
+		}
+
+		#main {
+			padding-bottom: 6em;
+		}
+
 /* Footer */
 
 	#footer {
+		height: 27em;
 		text-align: center;
-		padding: 8em 0 8em 0;
+		padding: 1em 0 0 0;
+	
 	}
 
 		#footer a {
 			color: inherit;
+
 		}
 
 		#footer h2.major {
@@ -2931,29 +3025,97 @@ input, select, textarea {
 				color: white;
 			}
 
+			#footer table {
+				border: none;
+				text-align: left;
+				
+			}
+
+
+			#footer a:link {
+				text-decoration: none;
+			}
+	
+			#footer a:visited {
+				text-decoration: none;
+			}
+	
+			#footer a:hover {
+				color: #2DAAE4;
+			}
+	
+			#footer a:active {
+				color: #2DAAE4;
+			}
+	.linkheader {
+		border-bottom: solid 3px #969696be;
+		font-size: large;
+		padding-bottom: .3em;
+		font-weight: bold;
+		color: #203e64;
+	}
+
+	#footer-links-row td {
+		padding-top: .5em;
+	}
+
+	#footer a {
+		font-size: 1.0em;
+		color: #464646;
+	}
+
+	#footer #map p {
+		margin-bottom: 0;
+		margin-top:0;
+		margin-left:1em;
+		color:#464646;
+		font-size: large;
+		text-align: left;
+	}
+
+	#footer-clinic {
+		padding-left: 7em;
+	}
+
+	#footer .underline {
+		border: solid #8b8b8b60 2px;
+		margin:1em 6em 1em 6em
+	}
+
+	#footer row {
+		padding: 0 7em 0 7em;
+	}
+
+	#footer-links-row {
+		padding: 0 7em 0 7em;
+		background-color: white;
+		border-top: solid rgb(194, 194, 194) 10px;
+	}
+	/* 
+		style="padding: 0 7em 0 7em;background-color: white;border-top: solid rgb(194, 194, 194) 10px;"
+	*/
+
+
 /* Copyright */
 
 	#copyright {
-		display: inline-block;
-		background: #e7eae8;
+		
+		
 		padding: 0.75em 2em 0.75em 2em;
 		border-radius: 8px;
 		color:#203e64;
-		margin: 4em 0 0 0;
+		margin: 2em 0 0 0;
 	}
 
 		#copyright a {
 			color: inherit;
 		}
 
-		#copyright .menu {
-			margin: 0;
-		}
-
+		
 			#copyright .menu li {
 				border-color: white;
 				border-width: 2px;
-				line-height: 1em;
+				
 			}
 
 /* XLarge */
@@ -3012,20 +3174,24 @@ input, select, textarea {
 		/* Banner */
 
 			#banner {
-				padding: 6em 0;
+				padding: 2em 0;
 			}
 
 				#banner .content {
-					padding: 4em 0 3em 0;
+					padding: 2em 0 3em 1em;
 				}
 
 					#banner .content h2 {
 						margin: 0 0 0.65em 0;
+						padding-right: 0;
 					}
 
 					#banner .content p {
 						margin: 0 0 1em 0;
+						padding-right: 0;
 					}
+
+					
 
 		/* Main */
 
@@ -3037,7 +3203,7 @@ input, select, textarea {
 		/* Footer */
 
 			#footer {
-				padding: 6em 0 6em 0;
+				padding: 0 0 6em 0;
 			}
 
 	}
@@ -3064,16 +3230,17 @@ input, select, textarea {
 
 		/* Header */
 
-			#header {
+			/* #header {
 				display: none;
-			}
+			} */
 
 		/* Banner */
-
+/* 
 			#banner {
 				padding: calc(14em + 44px) 0 14em 0;
-			}
+			} */
 
+			
 		/* Nav */
 
 			#nav {
@@ -3083,7 +3250,7 @@ input, select, textarea {
 		/* Main */
 
 			#main {
-				border-top-width: 0;
+				border-top-width: 20px;
 			}
 
 		/* Sidebar */
@@ -3141,7 +3308,7 @@ input, select, textarea {
 					font-family: 'Open Sans Condensed', sans-serif;
 					font-weight: 700;
 					text-transform: uppercase;
-					font-size: 1.25em;
+					font-size: 0;
 					line-height: 44px;
 					color: #fff;
 					z-index: 1000;
@@ -3177,7 +3344,7 @@ input, select, textarea {
 						position: absolute;
 						left: 0;
 						top: 0;
-						background: #b1ddab;
+						background: #0c4274;
 						width: 44px;
 						height: 44px;
 						content: '\f0c9';
@@ -3188,7 +3355,7 @@ input, select, textarea {
 					}
 
 					#titleBar .toggle:active:before {
-						background-color: #a1cd9b;
+						background-color: #9bb7cd;
 					}
 
 			#navPanel {
@@ -3297,7 +3464,26 @@ input, select, textarea {
 				-ms-transform: translateX(0);
 				transform: translateX(0);
 			}
+		
 
+		/* footer  */
+
+		#footer #footer-clinic {
+			padding-left: 3em;
+		}
+
+		#footer i {
+			margin-right: 1em;
+			
+		}
+
+		#map > p {
+			display: none;
+		}
+		#footer i {
+			display: none;
+
+		}
 	}
 
 /* Small */
@@ -3401,26 +3587,48 @@ input, select, textarea {
 
 		/* Banner */
 
-			#banner {
+			/* #banner {
 				padding: calc(6em + 44px) 0 6em 0;
-			}
+			}*/
 
 				#banner .content {
-					padding: 4em 2.5em 3em 2.5em;
-				}
+					padding: .5em 2.5em 3em 2.5em;
+					
+				} 
 
 					#banner .content h2 {
-						font-size: 2em;
+						font-size: 2.5em;
 					}
 
 					#banner .content p {
-						font-size: 1.25em;
+						font-size: 1.75em;
+					} 
+
+					#banner .content i {
+						position: relative;
+					}
+
+					#banner h2 p {
+						position: absolute;
+						
+					}
+
+					#banner i {
+						display: none;
+					}
+
+					.banner-l {
+						width: 100%;
+					}
+
+					.banner-r {
+						width: 0;
 					}
 
 		/* Main */
 
 			#main {
-				padding: 3em 0;
+				padding: 0 0;
 			}
 
 		/* Sidebar */
@@ -3435,6 +3643,22 @@ input, select, textarea {
 
 			#footer {
 				padding: 3em 0;
+			}
+
+			#footer .col-12-small {
+				padding-left: 0;
+				padding-right:0;
+				margin-left: 0;
+				margin-right: 0;
+			}
+
+			#footer #footer-clinic {
+				padding-left: 0;
+				margin-left: 0;
+			}
+
+			#footer section {
+				padding-top:3em
 			}
 
 		/* Copyright */

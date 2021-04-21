@@ -13,9 +13,37 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 
 		<style>
-			ul li {
-				margin-left: 10%;
-				padding-left: 0;
+			
+			h1, h2, h3, h4 {
+				color: #203e64;
+			}
+			.underline {
+				margin-top: 2em;
+				margin-bottom: 2em;
+				border-bottom: solid 12px #9b9b9b;
+				margin-left:0;
+				margin-right: 2em;
+				opacity: .5;
+				border-radius: 10px;
+			}
+
+			h3 {
+				font-size: 1.7em;
+			}
+			section > p, li {
+				color: #3b3b3b;
+			}
+			b {
+				color:	#4f88bd;
+			}
+			ul {
+				margin-left: 20px;
+			}
+			ol {
+				margin-left: 20px;
+			}
+			li {
+				margin-left:15px;
 			}
 		</style>
 	</head>
@@ -24,23 +52,23 @@
 
 			<!-- Header -->
 			<header id="header">
-				<div class="logo container">
-					<div>
-						<h1><a href="index.html" id="logo">
-							<img src="images/fmclogo.jpg" alt="logo" />
-						</a></h1>
-						<!-- <p>Friendship Medical Clinic</p> -->
-					</div>
-				</div>
+				<img src="images/fmclogo.jpg" alt="logo" class="fmclogo" />
 			</header>
 			<!-- Nav -->
 			<nav id="nav">
 				<ul>
-					<li class="current"><a href="index.html">Home</a></li>
+					<li ><a href="index.html">Home</a></li>
 					<li>
-						<a href="paitentinfo.html">Paitents</a>
+						<a href="services.html">Services</a>
+						<ul>
+							<li><a href="services.html">Our Serivces</a></li>
+							<li>
+								<a href="paitentinfo.html">Paitents</a>
+							</li>
+							<li><a href="outreach.html">Community Outreach</a></li>
+						</ul>
 					</li>
-					<li>
+					<li class="current">
 						<a href="about_us.html">Who We Are</a>
 						<ul>
 							<li><a href="about_us.html">About Us</a></li>
@@ -76,26 +104,23 @@
 
 										<!-- Something -->
 											<section>
-												<h2 class="major"><span>Magna Feugiat</span></h2>
-												<p>
-													Donec sagittis massa et leo semper scele risque metus faucibus. Morbi congue mattis mi.
-													Phasellus sed nisl vitae risus tristique volutpat. Cras rutrum sed commodo luctus blandit.
-												</p>
-												<a href="#" class="button alt">Learn more</a>
+												<i class='fas fa-user-md' style='font-size:15em;color:#4f88bd'></i>
 											</section>
 
 										<!-- Something -->
-											<section>
-												<h2 class="major"><span>Magna Feugiat</span></h2>
-												<a href="#" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
+										<section>
+											<h2 class="major" style="margin-bottom: 1em;"><span>Who We Are</span></h2>
+											<div class="sidelinks">
+												<a href="about_us.html">About Us</a>
+													<a href="mission.html">Our Mission</a>
+													<a href="history.html" >History</a>
+													<a href="team.html"   class="current">Meet The Team</a>
+													<a href="the_board.html">Board Members</a>
+													<a href="benefits.html">Why We Benefit Everyone</a>
+											</div>
+											<a href="#" class="button alt" style="margin-top: 30px;">Learn more</a>
+										</section>
 
-												<p>
-													Rhoncus dui quis euismod. Maecenas lorem tellus, congue et condimentum ac, ullamcorper non sapien.
-													Donec sagittis massa et leo semper scele risque metus faucibus. Morbi congue mattis mi.
-													Phasellus sed nisl vitae risus tristique volutpat. Cras rutrum sed commodo luctus blandit.
-												</p>
-												<a href="#" class="button alt">Learn more</a>
-											</section>
 
 								</div>
 							</div>
@@ -107,61 +132,39 @@
 										<article class="box page-content" style="padding-left: 5%; padding-top: 50px;">
 
 											<header>
-												<h2>About Us</h2>
-												<p>Semper amet scelerisque metus faucibus morbi congue mattis</p>
+												<h2>Meet The Team</h2>
+												<p style="color: #4f88bd;">Semper amet scelerisque metus faucibus morbi congue mattis</p>
 											</header>
 
 											<section>
-												<span class="image featured"><img src="images/pic05.jpg" alt="" /></span>
+												<h3>Our Team</h3>
 												<p>
-													Founded in 1965, Friendship Medical Clinic & Pharmacy is the oldest <a href="#">free medical 
-													clinic</a> in South Carolina. As a <a href="#">501(c)(3) nonprofit organization</a>, the clinic provides 
-													a primary medical care home, as well as medications, for qualifying uninsured adults, 
-													through our full-service, state-licensed pharmacy located within the clinic.
+													Dr. Reginald Daves, MD, Medical Director - Volunteer
 												</p>
-												
-											</section>
-
-											<section>
-												<h3>Employees</h3>
 												<p>
-													The clinic has 2 full-time paid personnel including the executive director and 5 part-time employees. 
-													Without the support of 48 volunteers, Horry County would not have a free clinic to serve a vital need 
-													in our community. Clinic volunteers are committed to the belief that everyone deserves medical care and 
-													they generously donate their time and skills.
+													Patty Gresko, Pharmacist-in-Charge - Volunteer
 												</p>
-												<h3>Volunteers</h3>
-												<p>
-													Volunteer doctors at the clinic believe that people stay healthy and employed, through the diagnosis and 
-													management of chronic diseases such as:
-												</p>
+												<h3>Volunteer Doctors Within The Clinic</h3>
 												<ul>
-													<li>Hypertension</li>
-													<li>Diabetes</li>
-													<li>Cardiovascular disease</li>
-													<li>Depression</li>
-													<li>Obesity</li>
-													<li>Arthritis</li>
-													<li>Elevated cholesterol levels</li>
-													<li>COPD</li>
-													<li>Gynecology/Menopause</li>
+													<li>Dr. Joseph Moyer, FACAAI</li>
+													<li>Dr. Reginald Daves, OB/Gyn</li>
+													<li>Dr. Charles Johnson, MD, Internal Medicine</li>
+													<li>Dr. Stewart Haskins,Jr. Orthopedic</li>
+													<li>Dr. Kenneth Lee DeHart, Surgeon</li>
+													<li>Dr. Jennifer O. Kuperman, Surgeon</li>
+													<li>Dr. Lawrence Holt,Jr. Oncology</li>
+													
 												</ul>
-												<p>
-													Volunteers and staff take pride in being courteous, compassionate, respectful and professional with each 
-													patient. They understand that patients are oftentimes in stressful situations, and have bad health because 
-													of a lack of medical attention, and are embarrassed of having to seek free help.
-												</p>
-												<p>
-													Oftentimes when someone has a medical condition, it's not only the patient who suffers, but their families 
-													as well, if a patient cannot work due to illness. A community is healthier, economically and socially, if its 
-													residents are productive and working. Individuals are healthier mentally, when they can maintain their self-respect
-													 and in some way give back to their community.
-												</p>
-												<p>
-													For current financial information, please visit <a href=#>SC Secretary of State website</a>.
-													<br><br>
-													Additional information concerning the clinic may be found on <a href="">GuideStar</a> as well.
-												</p>
+												<h3>Volunteer Pharmacists</h3>
+												<ul>
+													<li>Ken Murphy, R.PH.</li>
+													<li>Jeff Barfield, R.PH.</li>
+													<li>Julie Strickland, PharmD</li>
+													<li>Patty Gresko, R.PH. Pharmacist-In-Charge</li>
+													<li>Robert Gajewski, R.PH.</li>
+													<li>Russ Parr, R.PH.</li>
+													<li>Sandy Logan, R.PH.</li>
+												</ul>
 											</section>
 
 										</article>
@@ -171,52 +174,133 @@
 							
 						</div>
 					</div>
+					
+						<!-- 
+							
+						 -->
 				</section>
-
-			<!-- Footer -->
-				<footer id="footer">
-					<div class="container">
-						<div class="row gtr-200">
-							<!-- <div class="col-12"> -->
-
-								<!-- About -->
-									<!-- <section>
-										<h2 class="major"><span>What's this about?</span></h2>
-										<p>
-											Suspendisse laoreet metus ut metus imperdiet interdum aliquam justo tincidunt. Mauris dolor urna,
-													fringilla vel malesuada ac, dignissim eu mi. Praesent mollis massa ac nulla pretium pretium.
-													Maecenas tortor mauris, consectetur pellentesque dapibus eget, tincidunt vitae arcu.
-										</p>
-									</section> -->
-
-							<!-- </div> -->
-							<div class="col-12">
-
-								<!-- Contact -->
-									<section>
-										<h2 class="major"><span>Get in touch</span></h2>
-										<ul class="contact">
-											<li><a class="icon brands fa-facebook-f" href="#"><span class="label">Facebook</span></a></li>
-											<li><a class="icon brands fa-twitter" href="#"><span class="label">Twitter</span></a></li>
-											<li><a class="icon brands fa-instagram" href="#"><span class="label">Instagram</span></a></li>
-											<li><a class="icon brands fa-dribbble" href="#"><span class="label">Dribbble</span></a></li>
-											<li><a class="icon brands fa-linkedin-in" href="#"><span class="label">LinkedIn</span></a></li>
-										</ul>
+				
+				<!-- Footer -->
+					<footer id="footer" >
+						<div class="container-fluid">
+							
+							<div class="row" style="padding: 0 7em 0 7em;">
+								<div class="col-4 col-6-medium col-12-small">								
+									<section id="map">
+										<p style="color: #203e64;">Get Directions</p>
+										<iframe width="350" height="230" style="border:solid 1px black;border-radius: 1px;" loading="lazy" 
+								allowfullscreen src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJKULMATMTAIkRMrlRclFWGn4&key=AIzaSyAxbkhRBHYPDh_IJpbzWvOE1m4HE9FdTaM"></iframe>
+							
 									</section>
-
+								</div>
+								<div class="col-4 col-6-medium col-12-small">
+									<section style="text-align: center;">
+										<p style="margin-bottom: 1em;">
+											Friendship Medical Center & Pharmacy<br>
+											1396 Highway 544 Conway, SC 29526	
+										</p>
+										<div class="underline"></div>
+										<p style="margin-bottom: 1em;">
+											Phone: 843-347-7199 Fax: 843-347-7180<br>
+											Paitent Line: 843-347-7178
+										</p>
+										<div class="underline"></div>
+										<p>
+											Clinic Hours:<br>
+											Monday - Thursday 8:30am - 4:00pm
+										</p>
+									
+									</section>
+								</div>
+								<div class="col-4 col-12-medium col-12-small">
+									<i class='fas fa-clinic-medical' id="banner-icon" style='font-size:15em;color:#203e64;opacity: .9;'></i>
+	
+									
+								</div>
 							</div>
-						</div>
-
-						<!-- Copyright -->
-							<div id="copyright">
-								<ul class="menu">
-									<li>&copy; Untitled. All rights reserved</li>
+							<section>
+								<!-- <h2 class="major"><span>Get in touch</span></h2> -->
+								<ul class="contact">
+									<li><a class="icon brands fa-facebook-f" href="#"><span class="label">Facebook</span></a></li>
+									<li><a class="icon brands fa-twitter" href="#"><span class="label">Twitter</span></a></li>
+									<li><a class="icon brands fa-instagram" href="#"><span class="label">Instagram</span></a></li>
+									<li><a class="icon brands fa-dribbble" href="#"><span class="label">Dribbble</span></a></li>
+									<li><a class="icon brands fa-linkedin-in" href="#"><span class="label">LinkedIn</span></a></li>
 								</ul>
-							</div>
-
+								
+							</section>
+							
+						</div>					
+					</footer>
+					<div class="row" id="footer" style="padding: 0 7em 0 7em;background-color: white;border-top: solid rgb(194, 194, 194) 10px;">
+						<div class="col-3 col-6-medium col-12-small">
+							
+							<img src="images/fmclogo.jpg" alt="Alps">
+						</div>
+						<div class="col-3 col-6-medium col-12-small" id="footer-clinic">
+							<table>
+								<tr>
+									<td class="linkheader">Clinical</td>
+								</tr>
+								<tr>
+									<td><a href="paitentInfo.html">Paitent Information</a></td>
+								</tr>
+								<tr>
+									<td><a href="contact.html">Contact Us</a></td>
+								</tr>
+								<tr>
+									<td><a href="donate.html">Donate</a></td>
+								</tr>
+							</table>
+						</div>
+						<div id="footer-helping" class="col-3 col-6-medium col-12-small">
+							<table>
+								<tr>
+									<td class="linkheader">Getting Involved</td>
+								</tr>
+								<tr>
+									<td><a href="how_to_help.html">How You Can Help</a></td>
+								</tr>
+								<tr>
+									<td><a href="volunteer.html">Volunteering</a></td>
+								</tr>
+								<tr>
+									<td><a href="giving.html">Giving</a></td>
+								</tr>
+							</table>
+						</div>
+						<div id="footer-about" class="col-3 col-6-medium col-12-small">
+							<table>
+								<tr>
+									<td class="linkheader">Who We Are</td>
+								</tr>
+								<tr>
+									<td><a href="about_us.html">About Us</a></td>
+								</tr>
+								<tr>
+									<td><a href="mission.html">Our Mission</a></td>
+								</tr>
+								<tr>
+									<td><a href="history.html">History</a></td>
+								</tr>
+								<tr>
+									<td><a href="team.html">Meet the Team</a></td>
+								</tr>
+								<tr>
+									<td><a href="the_board.html">Board Members</a></td>
+								</tr>
+								<tr>
+									<td><a href="benefits.html">How We Benifit Everyone</a></td>
+								</tr>
+							</table>
+						</div>
 					</div>
-				</footer>
-
+					<!-- Copyright -->
+					<div id="copyright">
+						<ul class="menu">
+							<li>&copy; Untitled. All rights reserved</li>
+						</ul>
+					</div>
 		</div>
 
 		<!-- Scripts -->

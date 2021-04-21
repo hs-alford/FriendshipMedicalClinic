@@ -21,13 +21,17 @@
 				color: #203e64;
 			}
 
+			h3 {
+				font-size: 1.7em;
+			}
+
 			ul li {
 				margin-left: 0;
 				padding-left: 0;
 			}
 
 			.tlbody {
-			background-color: #d4d4d4;
+			background-color: #4f88bd;
 			font-family: Helvetica, sans-serif;
 			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 			}
@@ -176,7 +180,9 @@
 			.timeline button {
 				width: 100%;
 			}
-
+			section > p, li {
+				color: #3b3b3b;
+			}
 		</style>
 	</head>
 	<body class="is-preload">
@@ -184,26 +190,28 @@
 
 			<!-- Header -->
 			<header id="header">
-				<div class="logo container">
-					<div>
-						<h1><a href="index.html" id="logo">
-							<img src="images/fmclogo.jpg" alt="logo" />
-						</a></h1>
-						<!-- <p>Friendship Medical Clinic</p> -->
-					</div>
-				</div>
+				<img src="images/fmclogo.jpg" alt="logo" class="fmclogo" />
 			</header>
 			<!-- Nav -->
 			<nav id="nav">
 				<ul>
 					<li><a href="index.html">Home</a></li>
-					<li><a href="covid.html">COVID-19</a></li>
-					<li class="current">
+					<li>
+						<a href="services.html">Services</a>
+						<ul>
+							<li><a href="services.html">Our Serivces</a></li>
+							<li>
+								<a href="paitentinfo.html">Paitents</a>
+							</li>
+							<li><a href="outreach.html">Community Outreach</a></li>
+						</ul>
+					</li>
+					<li  class="current">
 						<a href="about_us.html">Who We Are</a>
 						<ul>
 							<li><a href="about_us.html">About Us</a></li>
 							<li><a href="mission.html">Our Mission</a></li>
-							<li class="current"><a href="history.html">History</a></li>
+							<li><a href="history.html">History</a></li>
 							<li><a href="team.html">Meet The Team</a></li>
 							<li><a href="the_board.html">Board Members</a></li>
 							<li><a href="benefits.html">Why We Benefit Everyone</a></li>
@@ -217,27 +225,15 @@
 							<li><a href="giving.html">Giving</a></li>
 						</ul>
 					</li>
-					<li><a href="success_stories.html">Success Stories</a></li>
+					<!-- <li><a href="success_stories.html">Success Stories</a></li> -->
 					<li><a href="contact.html">Contact Us</a></li>
+					<li><a href="donate.html">Donate</a></li>
 				</ul>
 			</nav>
 
 			<!-- Main -->
 				<section id="main">
-					<!-- <div class="container-fluid">
-
-						<div class="row">
-							<div class="col-12">
-								<div class="content">
-									<span class="image featured">
-										<img src="images/beach.jpg" alt="" style="height: 35em; object-fit: cover; border-bottom: solid 35px #203e64;" />
-										<h2 class="imgtextcenter" style="color: rgb(38, 61, 97); 
-											font-size: 5.5em; text-transform: uppercase; text-align: center; padding-top: 50px">Our Clinic's History</h2>
-									</span>
-								</div>
-							</div>
-						</div>
-					</div> -->
+					
 					<div class="container">
 						<div class="row">
 							<div class="col-3 col-12-medium">
@@ -250,25 +246,24 @@
 
 									<!-- Something -->
 									<section>
-												<h2 class="major"><span>Magna Feugiat</span></h2>
-												<p>
-													Donec sagittis massa et leo semper scele risque metus faucibus. Morbi congue mattis mi.
-													Phasellus sed nisl vitae risus tristique volutpat. Cras rutrum sed commodo luctus blandit.
-												</p>
-												<a href="#" class="button alt">Learn more</a>
+										<i class='fas fa-book-open' style='font-size:15em;color:#4f88bd'></i>
+										
 									</section>
 
 									<!-- Something -->
 									<section>
-												<h2 class="major"><span>Magna Feugiat</span></h2>
-												<a href="#" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
-
-												<p>
-													Rhoncus dui quis euismod. Maecenas lorem tellus, congue et condimentum ac, ullamcorper non sapien.
-													Donec sagittis massa et leo semper scele risque metus faucibus. Morbi congue mattis mi.
-													Phasellus sed nisl vitae risus tristique volutpat. Cras rutrum sed commodo luctus blandit.
-												</p>
-												<a href="#" class="button alt">Learn more</a>
+										<section>
+											<h2 class="major"><span>Who We Are</span></h2>
+											<div class="sidelinks">
+												<a href="about_us.html">About Us</a>
+													<a href="mission.html">Our Mission</a>
+													<a href="history.html"  class="current">History</a>
+													<a href="team.html">Meet The Team</a>
+													<a href="the_board.html">Board Members</a>
+													<a href="benefits.html">Why We Benefit Everyone</a>
+											</div>
+											<a href="#" class="button alt" style="margin-top: 30px;">Learn more</a>
+										</section>
 									</section>
 
 								</div>
@@ -299,6 +294,8 @@
 												<!-- Timeline -->
 
 												<h2>A Timeline Of Highlights</h2>
+												<p style="font-size: large;text-transform: capitalize;margin: 0;">
+													(Click the year to read more!)</p>
 												<div class="tlbody">
 													<div class="timeline">
 														<div class="tlcontainer tlleft">
@@ -495,40 +492,133 @@
 							</div>
 						</div>
 					</div>
-				</section>
-
-			<!-- Footer -->
-				<footer id="footer">
-					<div class="container">
-						<div class="row gtr-200">
+					
+						<!-- 
 							
-							<div class="col-12">
-
-								<!-- Contact -->
-									<section>
-										<h2 class="major"><span>Get in touch</span></h2>
-										<ul class="contact">
-											<li><a class="icon brands fa-facebook-f" href="#"><span class="label">Facebook</span></a></li>
-											<li><a class="icon brands fa-twitter" href="#"><span class="label">Twitter</span></a></li>
-											<li><a class="icon brands fa-instagram" href="#"><span class="label">Instagram</span></a></li>
-											<li><a class="icon brands fa-dribbble" href="#"><span class="label">Dribbble</span></a></li>
-											<li><a class="icon brands fa-linkedin-in" href="#"><span class="label">LinkedIn</span></a></li>
-										</ul>
+						 -->
+				</section>
+				
+				<!-- Footer -->
+					<footer id="footer" >
+						<div class="container-fluid">
+							
+							<div class="row" style="padding: 0 7em 0 7em;">
+								<div class="col-4 col-6-medium col-12-small">								
+									<section id="map">
+										<p style="color: #203e64;">Get Directions</p>
+										<iframe width="350" height="230" style="border:solid 1px black;border-radius: 1px;" loading="lazy" 
+								allowfullscreen src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJKULMATMTAIkRMrlRclFWGn4&key=AIzaSyAxbkhRBHYPDh_IJpbzWvOE1m4HE9FdTaM"></iframe>
+							
 									</section>
-
+								</div>
+								<div class="col-4 col-6-medium col-12-small">
+									<section style="text-align: center;">
+										<p style="margin-bottom: 1em;">
+											Friendship Medical Center & Pharmacy<br>
+											1396 Highway 544 Conway, SC 29526	
+										</p>
+										<div class="underline"></div>
+										<p style="margin-bottom: 1em;">
+											Phone: 843-347-7199 Fax: 843-347-7180<br>
+											Paitent Line: 843-347-7178
+										</p>
+										<div class="underline"></div>
+										<p>
+											Clinic Hours:<br>
+											Monday - Thursday 8:30am - 4:00pm
+										</p>
+									
+									</section>
+								</div>
+								<div class="col-4 col-12-medium col-12-small">
+									<i class='fas fa-clinic-medical' id="banner-icon" style='font-size:15em;color:#203e64;opacity: .9;'></i>
+	
+									
+								</div>
 							</div>
-						</div>
-
-						<!-- Copyright -->
-							<div id="copyright">
-								<ul class="menu">
-									<li>&copy; Untitled. All rights reserved</li>
+							<section>
+								<!-- <h2 class="major"><span>Get in touch</span></h2> -->
+								<ul class="contact">
+									<li><a class="icon brands fa-facebook-f" href="#"><span class="label">Facebook</span></a></li>
+									<li><a class="icon brands fa-twitter" href="#"><span class="label">Twitter</span></a></li>
+									<li><a class="icon brands fa-instagram" href="#"><span class="label">Instagram</span></a></li>
+									<li><a class="icon brands fa-dribbble" href="#"><span class="label">Dribbble</span></a></li>
+									<li><a class="icon brands fa-linkedin-in" href="#"><span class="label">LinkedIn</span></a></li>
 								</ul>
-							</div>
-
+								
+							</section>
+							
+						</div>					
+					</footer>
+					<div class="row" id="footer" style="padding: 0 7em 0 7em;background-color: white;border-top: solid rgb(194, 194, 194) 10px;">
+						<div class="col-3 col-6-medium col-12-small">
+							
+							<img src="images/fmclogo.jpg" alt="Alps">
+						</div>
+						<div class="col-3 col-6-medium col-12-small" id="footer-clinic">
+							<table>
+								<tr>
+									<td class="linkheader">Clinical</td>
+								</tr>
+								<tr>
+									<td><a href="paitentInfo.html">Paitent Information</a></td>
+								</tr>
+								<tr>
+									<td><a href="contact.html">Contact Us</a></td>
+								</tr>
+								<tr>
+									<td><a href="donate.html">Donate</a></td>
+								</tr>
+							</table>
+						</div>
+						<div id="footer-helping" class="col-3 col-6-medium col-12-small">
+							<table>
+								<tr>
+									<td class="linkheader">Getting Involved</td>
+								</tr>
+								<tr>
+									<td><a href="how_to_help.html">How You Can Help</a></td>
+								</tr>
+								<tr>
+									<td><a href="volunteer.html">Volunteering</a></td>
+								</tr>
+								<tr>
+									<td><a href="giving.html">Giving</a></td>
+								</tr>
+							</table>
+						</div>
+						<div id="footer-about" class="col-3 col-6-medium col-12-small">
+							<table>
+								<tr>
+									<td class="linkheader">Who We Are</td>
+								</tr>
+								<tr>
+									<td><a href="about_us.html">About Us</a></td>
+								</tr>
+								<tr>
+									<td><a href="mission.html">Our Mission</a></td>
+								</tr>
+								<tr>
+									<td><a href="history.html">History</a></td>
+								</tr>
+								<tr>
+									<td><a href="team.html">Meet the Team</a></td>
+								</tr>
+								<tr>
+									<td><a href="the_board.html">Board Members</a></td>
+								</tr>
+								<tr>
+									<td><a href="benefits.html">How We Benifit Everyone</a></td>
+								</tr>
+							</table>
+						</div>
 					</div>
-				</footer>
-
+					<!-- Copyright -->
+					<div id="copyright">
+						<ul class="menu">
+							<li>&copy; Untitled. All rights reserved</li>
+						</ul>
+					</div>
 		</div>
 
 		<!-- Scripts -->

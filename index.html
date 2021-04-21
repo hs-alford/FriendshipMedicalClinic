@@ -17,39 +17,11 @@
 				font-size: x-large;
 			}
 			
-			/* .grouping {
-				display: block;
-				overflow: hidden;
-				padding-left: 20px;
-				padding-right: 20px;
-				padding-top: 5px;
-				margin-left: 0;
-				margin-right: 0;
-			}
 			
-			.feature-list span {
-				float: left;
-				margin-left: 0;
-				padding-left: 0;
-			}
-
-			.feature-list section {
-				margin-bottom: 1px;
-				padding-bottom: 1px;
-				padding-top: 50px;
-				margin-top: 1px;
-				
-			} */
 			
 			#header {
 				border-bottom: solid 30px #203e64;
 			}
-
-			
-
-			/* .textalert {
-				text-align: center;
-			} */
 
 			.textalert h3{
 				margin-bottom: 3px;
@@ -65,26 +37,6 @@
 				padding-top: 1em;
 				
 			}
-
-			/* h2.major {
-			position: relative;
-			border-top: solid 5px #e7eae8;
-			font-size: 1.65em;
-			text-align: center;
-			margin: 0 0 1.9em 0;
-			top: 0.775em;
-		}
-
-			
-
-			.major p {
-				display: inline-block;
-				border-top: solid 2px #e5e5e5;
-				color: #777;
-				margin: 1.5em 0 0 0;
-				padding: 1.5em 0 0 0;
-				font-style: normal;
-			} */
 
 			.mission p{
 				color:#203e64;
@@ -147,7 +99,7 @@
 				text-align: center;
 			}
 			.tile .fas {
-				font-size: 540px;
+				font-size: 30em;
 				color:#4f88bd;
 				position: absolute;
 				top: 0;
@@ -160,6 +112,11 @@
 				display: flex;
 				align-items: center;
 				justify-content: center;
+			}
+
+			#r1 {
+				padding-top: 3em;
+				padding-bottom: 4em;
 			}
 
 			#r1 .icon {
@@ -221,15 +178,7 @@
 			#r3 h1, h2, h3, h4, p {
 				color:#203e64
 			}
-			/* #r3 img {
-				background-color: black;
-				height: 100%;
-				width: 40%;
-				object-fit:contain;
-				
-			} */
-
-			/* Create an active/current "tab button" class */
+			
 			.tab button.active {
 			background-color: #4f88bd;
 			}
@@ -245,6 +194,95 @@
 				margin-top: 14em;
 			}
 
+			.mission h3 {
+				color: #203e64;
+				text-align: center;
+				font-weight: bolder;
+				font-size: 2em;
+			}
+
+			.mission p {
+				font-weight: normal;
+				font-size: 1.5em;
+			}
+
+			.tabcontent p {
+				margin-left: 2em;
+				margin-right: 2em;
+			}
+
+		
+
+			#r3 header {
+				margin-left: 2em;
+				margin-right: 2em;
+			}
+
+			#r3 .button {
+				margin-left: 2em;
+				margin-right: 2em;
+			}
+
+
+			#banner a {
+				margin-left: 1.5em;
+				margin-right: 3em;
+			}
+
+			
+
+			@media screen and (max-width: 980px) {
+				.sidebar {
+					margin-top: 3em;
+				}
+
+				#r1 .icon {
+					padding-left: 1.5em;
+					padding-right: 1.5em;
+				}
+
+				#banner-buttons {
+					margin-right: 5em
+				}
+
+				.tabcontent .button {
+					margin-right: 4em;
+				}
+				
+			}
+			
+			@media screen and (max-width: 736px) {
+				#r1 .icon {
+					padding-left: 0;
+					padding-right: 0;
+				}
+
+				#r1 li {
+					position: relative;
+					padding-left: 1em;
+					padding-right: 1em;
+				}
+
+				#r1 .linktext {
+					padding-top: 20px;
+					margin-bottom: 20em;
+					font-size: .8em;
+					display: block;
+					position: absolute;
+					font-weight: bolder;
+					text-align: center;
+					color: white;
+					
+				}
+
+				#r1 {
+					padding-top: 3em;
+				}
+
+				.tabcontent {
+					margin-right: 1em;
+				}
+			}
 		</style>
 	</head>
 	<body class="homepage is-preload landing">
@@ -252,14 +290,8 @@
 
 			<!-- Header -->
 				<header id="header">
-					<div class="logo container">
-						<div>
-							<h1><span><a href="index.html" id="logo">
-								<img src="images/fmclogo.jpg" alt="logo" class="fmclogo" />
-							</a></span></h1>
-							<!-- <p>Friendship Medical Clinic</p> -->
-						</div>
-					</div>
+					<img src="images/fmclogo.jpg" alt="logo" class="fmclogo" />
+					
 					
 				</header>
 				
@@ -316,7 +348,14 @@
 					<ul>
 						<li class="current"><a href="index.html">Home</a></li>
 						<li>
-							<a href="paitentInfo.html">Paitents</a>
+							<a href="services.html">Services</a>
+							<ul>
+								<li><a href="services.html">Our Serivces</a></li>
+								<li>
+									<a href="paitentinfo.html">Paitents</a>
+								</li>
+								<li><a href="outreach.html">Community Outreach</a></li>
+							</ul>
 						</li>
 						<li>
 							<a href="about_us.html">Who We Are</a>
@@ -348,23 +387,25 @@
 
 				<section id="banner" style="padding-bottom:10px; margin-bottom:0; height: 40em;;"> <!-- z index was at -1 -->
 					<div class="content">
-						<div class="bannerleft">
+						<div>
 							<h2>Welcome to Friendship Medical Clinic & Pharmacy</h2>
 							<p>Serving and Providing Healthcare Services to Horry County, SC Since 1965</p>
-							<div style="z-index: 3;">
+							<i class='fas fa-heartbeat' id="banner-icon" style='font-size:13em;color:#203e64'></i>
+
+							<div style="z-index: 3;" id="banner-buttons">
 								<a href="#main" class="button scrolly">Learn More</a>
 								
 								<a href="#main" class="button scrolly">Donate</a>
 							</div>
 						</div>
-						<div class="bannerright">
-							<i class='fas fa-heartbeat' style='font-size:24em;color:#203e64'></i>
+						<div>
+
 						</div>
 					</div>
 					
 				</section>
 			<!-- Main -->
-			<section id="main" style="background-color: white;"> <!-- zindex was at 0 -->
+			<section id="main" style="background-color: white;padding-bottom: 0;margin-bottom: 0;"> <!-- zindex was at 0 -->
 
 <!-- ============================================== QUOTE IN BANNER ============================================== -->
 
@@ -390,19 +431,19 @@
 				<div class="container-fluid">
 					<div class="row" style="background-color: white;border-top: solid 45px #203e64;">
 						<div class="container">
-							<div class="row" style="padding-top: 3em;padding-bottom: 6em;">
+							<div class="row" style="padding-top: 1em;padding-bottom: 8em;">
 								<div class="col-12">
 									<div class="content mission tile" style="background-color: white;">
 										<section class="box page-content">
 											<i class='fas fa-globe' style='color:#4f88bd;opacity: .6;'></i>
-											<h3 class="w3-xxlarge" style="color:#203e64;text-align: center;font-weight: bolder;">Our Mission</h3>
-												<p class="w3-xlarge" style="font-weight: normal;">
+											<h3>Our Mission</h3>
+												<p>
 													Friendship Medical Clinic provides free healthcare services and treatment
 													for uninsured adults living in Horry County.
 												</p>
 											
-												<h3 class="w3-xxlarge" style="color:#203e64;text-align: center;font-weight: bolder;">Our Goals</h3>
-												<p class="w3-xlarge" style="font-weight: normal;">
+												<h3>Our Goals</h3>
+												<p>
 													Improve health outcomes by providing medical care regardless of the ability to pay for services
 													<br><br>
 													Promote healthy behaviors
@@ -425,20 +466,20 @@
 					<div class="container-fluid">
 						<div style="background-color: #203e64;">
 							<div class="contianer">
-								<div class="row gtr-200" id="r1" style="margin-top:1em;padding-bottom: 6em;">
+								<div class="row" id="r1">
 									<div class="col-12">
 		
 										<!-- Highlight -->
 											<section class="box highlight">
 												<ul class="special">
-													<li><a href="#" class="icon solid fa-search"><span class="linktext">Paitent Info</span></a></li>
-													<li><a href="#" class="icon solid fa-tablet-alt"><span class="linktext">Our Services</span></a></li>
-													<li><a href="#" class="icon solid fa-flask"><span class="linktext">Community Work</span></a></li>
-													<li><a href="#" class="icon solid fa-cog"><span class="linktext">Contact Us</span></a></li>
+													<li><a href="paitentInfo.html" class="icon solid fa-notes-medical"><span class="linktext">Paitent Info</span></a></li>
+													<li><a href="services.html" class="icon solid fa-stethoscope"><span class="linktext">Our Services</span></a></li>
+													<li><a href="outreach.html" class="icon solid fa-hand-holding-heart"><span class="linktext">Community Work</span></a></li>
+													<li><a href="contact.html" class="icon solid fa-phone-square-alt"><span class="linktext">Contact Us</span></a></li>
 												</ul>
 												<header>
 													<!-- <h2>Quick Links</h2> -->
-													<p style="color: white;">If you are looking any of these categories just click the icon</p>
+													<p style="color: white; margin-top:4em">If you are looking any of these categories just click the icon</p>
 												</header>
 												<!-- <p>
 													Phasellus quam turpis, feugiat sit amet ornare in, hendrerit in lectus. Praesent semper mod quis eget mi. Etiam eu<br />
@@ -456,8 +497,8 @@
 <!-- ============================================== HISTORY AND GOALS ROW ============================================== -->
 					
 
-				<div class="container-fluid">
-					<div class="col-12" style="padding: 5em 7em;">
+				<div class="container-fluid" style="background-color: #e7e7e7;">
+					<div class="col-12" style="padding: 6em 1.8em 5em 1.8em;">
 
 						<!-- Blog -->
 							<section class="box blog" id="r3">
@@ -564,56 +605,142 @@
 					</div>
 				</div>
 
+				<div class="row" id="footer" style="padding: 0 7em 0 7em;background-color: white;border-top: solid rgb(194, 194, 194) 10px;height: 24em;">
+					<div class="col-3 col-6-medium col-12-small">
 						
-					
-		</section>
-
+						<img src="images/fmclogo.jpg" alt="Alps">
+					</div>
+					<div class="col-3 col-6-medium col-12-small" id="footer-clinic">
+						<table>
+							<tr>
+								<td class="linkheader">Clinic Services</td>
+							</tr>
+							<tr>
+								<td><a href="paitentInfo.html">Paitent Information</a></td>
+							</tr>
+							<tr>
+								<td><a href="services.html">Our Services</a></td>
+							</tr>
+							<tr>
+								<td><a href="outreach.html">Community Outreach</a></td>
+							</tr>
+							<tr>
+								<td><a href="contact.html">Contact Us</a></td>
+							</tr>
+							<tr>
+								<td><a href="donate.html">Donate</a></td>
+							</tr>
+						</table>
+					</div>
+					<div id="footer-helping" class="col-3 col-6-medium col-12-small">
+						<table>
+							<tr>
+								<td class="linkheader">Getting Involved</td>
+							</tr>
+							<tr>
+								<td><a href="how_to_help.html">How You Can Help</a></td>
+							</tr>
+							<tr>
+								<td><a href="volunteer.html">Volunteering</a></td>
+							</tr>
+							<tr>
+								<td><a href="giving.html">Giving</a></td>
+							</tr>
+						</table>
+					</div>
+					<div id="footer-about" class="col-3 col-6-medium col-12-small">
+						<table>
+							<tr>
+								<td class="linkheader">Who We Are</td>
+							</tr>
+							<tr>
+								<td><a href="about_us.html">About Us</a></td>
+							</tr>
+							<tr>
+								<td><a href="mission.html">Our Mission</a></td>
+							</tr>
+							<tr>
+								<td><a href="history.html">History</a></td>
+							</tr>
+							<tr>
+								<td><a href="team.html">Meet the Team</a></td>
+							</tr>
+							<tr>
+								<td><a href="the_board.html">Board Members</a></td>
+							</tr>
+							<tr>
+								<td><a href="benefits.html">How We Benifit Everyone</a></td>
+							</tr>
+						</table>
+					</div>
+				</div>
+					<!-- 
+						
+					 -->
+			</section>
+			
 			<!-- Footer -->
-				<footer id="footer" style="background-color:#8d8d8d;">
+				<footer id="footer">
 					<div class="container-fluid">
-						<div class="row gtr-200">
-							<!-- <div class="col-12"> -->
+						
+						<div class="row" style="padding: 3em 7em 0 7em;">
+							<div class="col-4 col-6-medium col-12-small">								
+								<section id="map">
+									<p style="color: #203e64;">Get Directions</p>
+									<iframe width="350" height="230" style="border:solid 1px black;border-radius: 1px;" loading="lazy" 
+							allowfullscreen src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJKULMATMTAIkRMrlRclFWGn4&key=AIzaSyAxbkhRBHYPDh_IJpbzWvOE1m4HE9FdTaM"></iframe>
+						
+								</section>
+							</div>
+							<div class="col-4 col-6-medium col-12-small">
+								<section style="text-align: center;">
+									<p style="margin-bottom: 1em;">
+										Friendship Medical Center & Pharmacy<br>
+										1396 Highway 544 Conway, SC 29526	
+									</p>
+									<div class="underline" style="margin-bottom: 1em;margin-left: 6em;margin-right:6em;"></div>
+									<p style="margin-bottom: 1em;">
+										Phone: 843-347-7199 Fax: 843-347-7180<br>
+										Paitent Line: 843-347-7178
+									</p>
+									<div class="underline" style="margin-bottom: 1em;margin-left: 6em;margin-right:6em"></div>
+									<p>
+										Clinic Hours:<br>
+										Monday - Thursday 8:30am - 4:00pm
+									</p>
+								
+								</section>
+							</div>
+							<div class="col-4 col-12-medium col-12-small">
+								<i class='fas fa-clinic-medical' id="banner-icon" style='font-size:15em;color:#203e64;opacity: .9;'></i>
 
-								<!-- About -->
-									<!-- <section>
-										<h2 class="major"><span>What's this about?</span></h2>
-										<p>
-											Suspendisse laoreet metus ut metus imperdiet interdum aliquam justo tincidunt. Mauris dolor urna,
-													fringilla vel malesuada ac, dignissim eu mi. Praesent mollis massa ac nulla pretium pretium.
-													Maecenas tortor mauris, consectetur pellentesque dapibus eget, tincidunt vitae arcu.
-										</p>
-									</section> -->
-
-							<!-- </div> -->
-							<div class="col-12">
-
-								<!-- Contact -->
-									<section>
-										<h2 class="major"><span>Get in touch</span></h2>
-										<ul class="contact">
-											<li><a class="icon brands fa-facebook-f" href="#"><span class="label">Facebook</span></a></li>
-											<li><a class="icon brands fa-twitter" href="#"><span class="label">Twitter</span></a></li>
-											<li><a class="icon brands fa-instagram" href="#"><span class="label">Instagram</span></a></li>
-											<li><a class="icon brands fa-dribbble" href="#"><span class="label">Dribbble</span></a></li>
-											<li><a class="icon brands fa-linkedin-in" href="#"><span class="label">LinkedIn</span></a></li>
-										</ul>
-									</section>
-
+								
 							</div>
 						</div>
-						<!-- Copyright -->
+						<section>
+							<!-- <h2 class="major"><span>Get in touch</span></h2> -->
+							<ul class="contact">
+								<li><a class="icon brands fa-facebook-f" href="#"><span class="label">Facebook</span></a></li>
+								<li><a class="icon brands fa-twitter" href="#"><span class="label">Twitter</span></a></li>
+								<li><a class="icon brands fa-instagram" href="#"><span class="label">Instagram</span></a></li>
+								<li><a class="icon brands fa-dribbble" href="#"><span class="label">Dribbble</span></a></li>
+								<li><a class="icon brands fa-linkedin-in" href="#"><span class="label">LinkedIn</span></a></li>
+							</ul>
+							<!-- Copyright -->
 						<div id="copyright">
 							<ul class="menu">
 								<li>&copy; Untitled. All rights reserved</li>
 							</ul>
 						</div>
+						</section>
+						
 					</div>					
 				</footer>
 			
-		</div>
+			
 
 		<!-- Scripts -->
-		<script>
+			<script>
 
 			/* modal */
 			// Get the modal
@@ -693,7 +820,7 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-
+		</div>
 	</body>
 </html>
 

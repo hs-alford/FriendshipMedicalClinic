@@ -90,7 +90,7 @@
 				color:#203e64;
 				background-color: white;
 				position: relative;
-			
+				
 			}
 			.tile h3,
 			.tile p {
@@ -99,7 +99,7 @@
 				text-align: center;
 			}
 			.tile .fas {
-				font-size: 30em;
+				font-size: 37em;
 				color:#4f88bd;
 				position: absolute;
 				top: 0;
@@ -198,17 +198,18 @@
 				color: #203e64;
 				text-align: center;
 				font-weight: bolder;
-				font-size: 2em;
+				font-size: 3em;
 			}
 
 			.mission p {
 				font-weight: normal;
-				font-size: 1.5em;
+				font-size: 1.8em;
 			}
 
 			.tabcontent p {
 				margin-left: 2em;
 				margin-right: 2em;
+				font-size: 1.2em;
 			}
 
 		
@@ -229,7 +230,36 @@
 				margin-right: 3em;
 			}
 
+			#banner .tile {
+				max-width: 100%;
+				height: 30em;
+				color:#203e64;
+				background-color: rgba(255, 255, 255, 0);
+				position: relative;
 			
+			}
+			#banner .tile h3,
+			#banner .tile p {
+				position: relative;
+				z-index: 2;
+				text-align: center;
+			}
+			#banner .tile .fas {
+				font-size: 40em;
+				color:#203d64b9;
+				position: absolute;
+				top: 20%;
+				right: 0;
+				bottom: 0;
+				left: 0;
+				z-index: -1;
+				display: -webkit-box;
+				/* Safari */
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+
 
 			@media screen and (max-width: 980px) {
 				.sidebar {
@@ -247,6 +277,10 @@
 
 				.tabcontent .button {
 					margin-right: 4em;
+				}
+
+				#footer .row {
+					margin-bottom: 30em;
 				}
 				
 			}
@@ -352,7 +386,7 @@
 							<ul>
 								<li><a href="services.html">Our Serivces</a></li>
 								<li>
-									<a href="paitentInfo.html">Paitents</a>
+									<a href="paitentinfo.html">Paitents</a>
 								</li>
 								<li><a href="outreach.html">Community Outreach</a></li>
 							</ul>
@@ -387,10 +421,11 @@
 
 				<section id="banner" style="padding-bottom:10px; margin-bottom:0; height: 40em;;"> <!-- z index was at -1 -->
 					<div class="content">
-						<div>
+						<div class="tile">
+							<i class='fas fa-heartbeat' id="banner-icon"></i>
 							<h2>Welcome to Friendship Medical Clinic & Pharmacy</h2>
 							<p>Serving and Providing Healthcare Services to Horry County, SC Since 1965</p>
-							<i class='fas fa-heartbeat' id="banner-icon" style='font-size:13em;color:#203e64'></i>
+							
 
 							<div style="z-index: 3;" id="banner-buttons">
 								<a href="#main" class="button scrolly">Learn More</a>
@@ -407,29 +442,12 @@
 			<!-- Main -->
 			<section id="main" style="background-color: white;padding-bottom: 0;margin-bottom: 0;"> <!-- zindex was at 0 -->
 
-<!-- ============================================== QUOTE IN BANNER ============================================== -->
-
-					<!-- <div class="container">
-						<div class="row-1 w3-card-4 div-wrapper" style="margin-bottom: 7em; margin-top: -10em; z-index: 2;">
-							
-							<section class="box special" style="padding: 20px 0 0 0; margin: 0; background-color: #414141d0;">
-								<div style="padding-bottom: 15px;">
-									<h3 style="color:#4f88bd; font-weight:bold; font-style: italic; text-transform: capitalize;
-										padding-left: 1em; padding-right: 1em;">
-										We believe that by providing direction, education, and support in regards to paitent's health, we help
-										improve the paitent's quality of life and enrich the community as a whole.</h3>
-									
-								</div> 
-								
-							</section>
-						</div>
-					</div> -->
 
 
 <!-- ============================================== CLINIC MISSION ROW ============================================== -->
 
 				<div class="container-fluid">
-					<div class="row" style="background-color: white;border-top: solid 45px #203e64;">
+					<div class="row" style="background-color: white;border-top: solid 45px #203e64;padding-bottom:4em;">
 						<div class="container">
 							<div class="row" style="padding-top: 1em;padding-bottom: 8em;">
 								<div class="col-12">
@@ -437,6 +455,7 @@
 										<section class="box page-content">
 											<i class='fas fa-globe' style='color:#4f88bd;opacity: .6;'></i>
 											<h3>Our Mission</h3>
+										
 												<p>
 													Friendship Medical Clinic provides free healthcare services and treatment
 													for uninsured adults living in Horry County.
@@ -497,8 +516,8 @@
 <!-- ============================================== HISTORY AND GOALS ROW ============================================== -->
 					
 
-				<div class="container-fluid" style="background-color: #e7e7e7;">
-					<div class="col-12" style="padding: 6em 1.8em 5em 1.8em;">
+				<div class="container-fluid" style="background-color: #e7e7e7;padding: 6em 1.8em 7em 1.8em;">
+					<div class="col-12" style="">
 
 						<!-- Blog -->
 							<section class="box blog" id="r3">
@@ -511,8 +530,11 @@
 												<!-- Featured Post -->
 													<article class="box post">
 														<header>
-															<h3><a href="#">Here's a really big heading</a></h3>
-															<p>With a smaller subtitle that attempts to elaborate</p>
+															<h3 style="font-weight: bold;">Learn More About Our Clinic</h3>
+															<p>Our clinic has roots all through Horry County, we were founded over 50 years ago
+																and have strived to be a pillar of wellness and hope in the community ever since.
+
+															</p>
 															
 														</header>
 
@@ -522,7 +544,7 @@
 															<div class="w3-content w3-display-container w3-card-4">
 																<img src="images/hands.jpg" style="height: 29em;width: 100%;object-fit: contain;background-color: black">															
 															</div>
-															<h2>History Of Our Clinic</h2>
+															<h2 style="color: #203e64;">History Of Our Clinic</h2>
 															<div class="underline" style="margin-left: 25em;margin-right: 25em;"></div>
 															<p>
 																Founded in 1965, Friendship Medical Clinic & Pharmacy is the oldest free medical 
@@ -578,7 +600,7 @@
 																medical care. If you are intrested to see if you meet the requirements, get
 																applicaiton information, or lean about our services click here.
 															</p>
-															<a href="" class="button">Learn More</a>
+															<a href="" class="button" style="padding-top: 0;margin-top:0">Learn More</a>
 														  </div>
 													</article>
 	
@@ -605,95 +627,94 @@
 					</div>
 				</div>
 
-				<div class="row" id="footer" style="padding: 0 7em 0 7em;background-color: white;border-top: solid rgb(194, 194, 194) 10px;height: 24em;">
-					<div class="col-3 col-6-medium col-12-small">
-						
-						<img src="images/fmclogo.jpg" alt="Alps">
-					</div>
-					<div class="col-3 col-6-medium col-12-small" id="footer-clinic">
-						<table>
-							<tr>
-								<td class="linkheader">Clinic Services</td>
-							</tr>
-							<tr>
-								<td><a href="paitentInfo.html">Paitent Information</a></td>
-							</tr>
-							<tr>
-								<td><a href="services.html">Our Services</a></td>
-							</tr>
-							<tr>
-								<td><a href="outreach.html">Community Outreach</a></td>
-							</tr>
-							<tr>
-								<td><a href="contact.html">Contact Us</a></td>
-							</tr>
-							<tr>
-								<td><a href="donate.html">Donate</a></td>
-							</tr>
-						</table>
-					</div>
-					<div id="footer-helping" class="col-3 col-6-medium col-12-small">
-						<table>
-							<tr>
-								<td class="linkheader">Getting Involved</td>
-							</tr>
-							<tr>
-								<td><a href="how_to_help.html">How You Can Help</a></td>
-							</tr>
-							<tr>
-								<td><a href="volunteer.html">Volunteering</a></td>
-							</tr>
-							<tr>
-								<td><a href="giving.html">Giving</a></td>
-							</tr>
-						</table>
-					</div>
-					<div id="footer-about" class="col-3 col-6-medium col-12-small">
-						<table>
-							<tr>
-								<td class="linkheader">Who We Are</td>
-							</tr>
-							<tr>
-								<td><a href="about_us.html">About Us</a></td>
-							</tr>
-							<tr>
-								<td><a href="mission.html">Our Mission</a></td>
-							</tr>
-							<tr>
-								<td><a href="history.html">History</a></td>
-							</tr>
-							<tr>
-								<td><a href="team.html">Meet the Team</a></td>
-							</tr>
-							<tr>
-								<td><a href="the_board.html">Board Members</a></td>
-							</tr>
-							<tr>
-								<td><a href="benefits.html">How We Benifit Everyone</a></td>
-							</tr>
-						</table>
-					</div>
-				</div>
-					<!-- 
-						
-					 -->
+				
+					
 			</section>
 			
 			<!-- Footer -->
 				<footer id="footer">
 					<div class="container-fluid">
+						<div class="row" id="footer-row-1" >
+							<div class="col-3 col-6-medium col-12-small">
+								
+								<img src="images/fmclogo.jpg" alt="Alps">
+							</div>
+							<div class="col-3 col-6-medium col-12-small" id="footer-clinic">
+								<table>
+									<tr>
+										<td class="linkheader">Clinic Services</td>
+									</tr>
+									<tr>
+										<td><a href="paitentInfo.html">Paitent Information</a></td>
+									</tr>
+									<tr>
+										<td><a href="services.html">Our Services</a></td>
+									</tr>
+									<tr>
+										<td><a href="outreach.html">Community Outreach</a></td>
+									</tr>
+									<tr>
+										<td><a href="contact.html">Contact Us</a></td>
+									</tr>
+									<tr>
+										<td><a href="donate.html">Donate</a></td>
+									</tr>
+								</table>
+							</div>
+							<div id="footer-helping" class="col-3 col-6-medium col-12-small">
+								<table>
+									<tr>
+										<td class="linkheader">Getting Involved</td>
+									</tr>
+									<tr>
+										<td><a href="how_to_help.html">How You Can Help</a></td>
+									</tr>
+									<tr>
+										<td><a href="volunteer.html">Volunteering</a></td>
+									</tr>
+									<tr>
+										<td><a href="giving.html">Giving</a></td>
+									</tr>
+								</table>
+							</div>
+							<div id="footer-about" class="col-3 col-6-medium col-12-small">
+								<table>
+									<tr>
+										<td class="linkheader">Who We Are</td>
+									</tr>
+									<tr>
+										<td><a href="about_us.html">About Us</a></td>
+									</tr>
+									<tr>
+										<td><a href="mission.html">Our Mission</a></td>
+									</tr>
+									<tr>
+										<td><a href="history.html">History</a></td>
+									</tr>
+									<tr>
+										<td><a href="team.html">Meet the Team</a></td>
+									</tr>
+									<tr>
+										<td><a href="the_board.html">Board Members</a></td>
+									</tr>
+									<tr>
+										<td><a href="benefits.html">How We Benifit Everyone</a></td>
+									</tr>
+								</table>
+							</div>
+						</div>
 						
-						<div class="row" style="padding: 3em 7em 0 7em;">
+						<div class="row" id="footer-row-2">
 							<div class="col-4 col-6-medium col-12-small">								
-								<section id="map">
-									<p style="color: #203e64;">Get Directions</p>
-									<iframe width="350" height="230" style="border:solid 1px black;border-radius: 1px;" loading="lazy" 
+								<section id="map" >
+									<p style="color: #203e64;padding-left: 1em;font-weight: bold;padding-bottom:.3em">Get Directions</p>
+									<iframe style="border:solid 1px black;border-radius: 1px;height: 16em;width:25em;" loading="lazy" 
 							allowfullscreen src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJKULMATMTAIkRMrlRclFWGn4&key=AIzaSyAxbkhRBHYPDh_IJpbzWvOE1m4HE9FdTaM"></iframe>
 						
 								</section>
 							</div>
-							<div class="col-4 col-6-medium col-12-small">
-								<section style="text-align: center;">
+							<div class="col-4 col-6-medium col-12-small" id="footer-address">
+								<section style="text-align: center;font-weight: bold;">
 									<p style="margin-bottom: 1em;">
 										Friendship Medical Center & Pharmacy<br>
 										1396 Highway 544 Conway, SC 29526	
@@ -711,28 +732,29 @@
 								
 								</section>
 							</div>
-							<div class="col-4 col-12-medium col-12-small">
-								<i class='fas fa-clinic-medical' id="banner-icon" style='font-size:15em;color:#203e64;opacity: .9;'></i>
-
-								
+							<div class="col-4 col-12-medium">
+								<i class='fas fa-clinic-medical' id="banner-icon" ></i>
 							</div>
 						</div>
-						<section>
-							<!-- <h2 class="major"><span>Get in touch</span></h2> -->
-							<ul class="contact">
-								<li><a class="icon brands fa-facebook-f" href="#"><span class="label">Facebook</span></a></li>
-								<li><a class="icon brands fa-twitter" href="#"><span class="label">Twitter</span></a></li>
-								<li><a class="icon brands fa-instagram" href="#"><span class="label">Instagram</span></a></li>
-								<li><a class="icon brands fa-dribbble" href="#"><span class="label">Dribbble</span></a></li>
-								<li><a class="icon brands fa-linkedin-in" href="#"><span class="label">LinkedIn</span></a></li>
-							</ul>
-							<!-- Copyright -->
-						<div id="copyright">
-							<ul class="menu">
-								<li>&copy; Untitled. All rights reserved</li>
-							</ul>
+						<div class="row" id="footer-row-3">
+							<div class="col-12">
+								<ul class="contact" >
+									<li><a class="icon brands fa-facebook-f" href="#"><span class="label">Facebook</span></a></li>
+									<li><a class="icon brands fa-twitter" href="#"><span class="label">Twitter</span></a></li>
+									<li><a class="icon brands fa-instagram" href="#"><span class="label">Instagram</span></a></li>
+									<li><a class="icon brands fa-dribbble" href="#"><span class="label">Dribbble</span></a></li>
+									<li><a class="icon brands fa-linkedin-in" href="#"><span class="label">LinkedIn</span></a></li>
+								</ul>
+								<div id="copyright">
+									<ul class="menu">
+										<li>&copy; Untitled. All rights reserved</li>
+									</ul>
+								</div>
+							</div>
+							
+							
 						</div>
-						</section>
+						
 						
 					</div>					
 				</footer>

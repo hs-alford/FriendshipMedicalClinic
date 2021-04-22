@@ -2818,62 +2818,7 @@ input, select, textarea {
 
 /* Banner */
 
-	/* #banner {
-		position: relative;
-		background-color: #4f88bd;
-		background-image: url("../../images/mesh-1430107_1280.png");
-		background-repeat: no-repeat;
-		background-size: cover;
-		z-index: 1;
-	}
-
-		#banner .content {
-			position: absolute;
-			margin-top: 3em;
-		}
-
-			#banner .content h2 {
-				color: #fff;
-				font-size: 4em;
-				font-family: 'Open Sans Condensed', sans-serif;
-				text-transform: uppercase;
-			}
-
-			#banner .content p {
-				font-family: 'Open Sans Condensed', sans-serif;
-				font-weight: 700;
-				text-transform: capitalize;
-				color: rgb(59, 59, 59);
-				font-size: 1.75em;
-				margin-bottom: 2em;
-				
-			}
-
-			
-
-			#banner .content .button {
-				-moz-transition: border-color .2s ease-in-out, color .2s ease-in-out;
-				-webkit-transition: border-color .2s ease-in-out, color .2s ease-in-out;
-				-ms-transition: border-color .2s ease-in-out, color .2s ease-in-out;
-				transition: border-color .2s ease-in-out, color .2s ease-in-out;
-				color: #b4b7b5;
-				background: transparent !important;
-				border: solid 4px #3f3f3f;
-				border-color: rgba(68, 68, 68, 0.35);
-				font-size: 1.5em;
-				display: inline-block;
-				
-			}
-
-				#banner .content .button:hover {
-					color: #eeeeee;
-					border-color: rgba(87, 93, 89, 0.75);
-				}
-
-				#banner .content .button:active {
-					color: rgb(255, 255, 255);
-					border-color: #616763;
-				} */
+	
 
 
 
@@ -2889,7 +2834,7 @@ input, select, textarea {
 			
 					#banner .content {
 						position: relative;
-						/* background-color: rgba(21, 28, 23, 0.884); */
+						
 						background-image: url("images/overlay.png"), url("images/highlight.png");
 						background-position: top left, center center;
 						background-size: auto, 100% 250%;

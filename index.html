@@ -23,20 +23,7 @@
 				border-bottom: solid 30px #203e64;
 			}
 
-			.textalert h3{
-				margin-bottom: 3px;
-				float: left;
-				padding-left: 15em;
-				padding-right: 10px;
-				text-transform: none;
-				font-size:large;
-			}
-
-			.textalert p{
-				margin-bottom: 3px;
-				padding-top: 1em;
-				
-			}
+			
 
 			.mission p{
 				color:#203e64;
@@ -84,7 +71,7 @@
 
 
 
-			.tile {
+			#mission .tile {
 				max-width: 100%;
 				height: 30em;
 				color:#203e64;
@@ -92,13 +79,13 @@
 				position: relative;
 				
 			}
-			.tile h3,
-			.tile p {
+			#mission .tile h3,
+			#mission .tile p {
 				position: relative;
 				z-index: 2;
 				text-align: center;
 			}
-			.tile .fas {
+			#mission .tile .fas {
 				font-size: 37em;
 				color:#4f88bd;
 				position: absolute;
@@ -416,7 +403,7 @@
 
 				<!-- Banner -->
 
-				<section id="banner" style="padding-bottom:10px; margin-bottom:0; height: 40em;;"> <!-- z index was at -1 -->
+				<section id="banner" style="padding-bottom:10px; margin-bottom:0; height: 40em;"> <!-- z index was at -1 -->
 					<div class="content">
 						<div class="tile">
 							<i class='fas fa-heartbeat' id="banner-icon"></i>
@@ -444,7 +431,7 @@
 <!-- ============================================== CLINIC MISSION ROW ============================================== -->
 
 				<div class="container-fluid">
-					<div class="row" style="background-color: white;border-top: solid 45px #203e64;padding-bottom:4em;">
+					<div class="row" id="mission" style="background-color: white;border-top: solid 45px #203e64;padding-bottom:4em;">
 						<div class="container">
 							<div class="row" style="padding-top: 1em;padding-bottom: 8em;">
 								<div class="col-12">

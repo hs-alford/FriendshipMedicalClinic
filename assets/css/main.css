@@ -2889,7 +2889,6 @@ input, select, textarea {
 			
 					#banner .content {
 						position: relative;
-						background-color: rgba(21, 28, 23, 0.884);
 						background-image: url("images/overlay.png"), url("images/highlight.png");
 						background-position: top left, center center;
 						background-size: auto, 100% 250%;

@@ -3683,7 +3683,7 @@ input, select, textarea {
 
 	}
 
-	#wrapper.divided > * {
+	/* #wrapper.divided > * {
 		box-shadow: inset 0 1px 0 0 rgba(0, 0, 0, 0.075);
 	}
 
@@ -3700,7 +3700,6 @@ input, select, textarea {
 		}
 
 
-/* Spotlight (transitions) */
 
 .spotlight.onload-content-fade-up .content {
 	-moz-transition: opacity 0.75s ease-in-out, -moz-transform 0.75s ease-in-out;
@@ -4106,7 +4105,6 @@ body.is-preload .spotlight.onload-image-fade-in .image img {
 	opacity: 0;
 }
 
-/* Spotlight (style1) */
 
 .spotlight.style1 {
 	-moz-align-items: -moz-stretch;
@@ -4284,7 +4282,6 @@ body.is-preload .spotlight.onload-image-fade-in .image img {
 		object-position: right;
 	}
 
-/* Spotlight (style2) */
 
 .spotlight.style2 {
 	padding: 7rem 7rem 5rem 7rem ;
@@ -4471,10 +4468,11 @@ body.is-preload .spotlight.onload-image-fade-in .image img {
 		-ms-object-position: right;
 		object-position: right;
 	}
+ */
 
-/* Spotlight (style3) */
+ /* Spotlight (style3) */
 
-.spotlight.style3 {
+/* .spotlight.style3 {
 	padding: 7rem 7rem 5rem 7rem ;
 	-moz-align-items: center;
 	-webkit-align-items: center;
@@ -4719,11 +4717,11 @@ body.is-preload .spotlight.onload-image-fade-in .image img {
 		-webkit-object-position: right;
 		-ms-object-position: right;
 		object-position: right;
-	}
+	} */
 
 /* Spotlight (style4) */
 
-.spotlight.style4 {
+/* .spotlight.style4 {
 	padding: 7rem 5.25rem 5rem 5.25rem ;
 	-moz-align-items: center;
 	-webkit-align-items: center;
@@ -4899,11 +4897,11 @@ body.is-preload .spotlight.onload-image-fade-in .image img {
 		-webkit-object-position: right;
 		-ms-object-position: right;
 		object-position: right;
-	}
+	} */
 
 /* Spotlight (style5) */
 
-.spotlight.style5 {
+/* .spotlight.style5 {
 	padding: 7rem 5.25rem 5rem 5.25rem ;
 	-moz-align-items: center;
 	-webkit-align-items: center;
@@ -5121,11 +5119,11 @@ body.is-preload .spotlight.onload-image-fade-in .image img {
 
 .spotlight.style3.invert.android .image:after {
 	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='64px' height='32px' viewBox='0 0 64 32' zoomAndPan='disable'%3E%3Cstyle%3Erect %7Bfill: transparent%3B stroke: white%3B stroke-width: 1px%3B %7D%3C/style%3E%3Crect rx='4' ry='4' x='6' y='4' width='52' height='24' vector-effect='non-scaling-stroke' /%3E%3C/svg%3E");
-}
+} */
 
 /* Wrapper */
 
-#wrapper {
+/* #wrapper {
 	background-color: inherit;
 	width: 100%;
 	overflow-x: hidden;
@@ -5476,12 +5474,12 @@ body.is-preload .spotlight.onload-image-fade-in .image img {
 
 		#wrapper.divided > .invert:first-child {
 			box-shadow: none !important;
-		}
+		} */
 
 
 /* Image */
 
-.spotlight .image {
+/* .spotlight .image {
 	border: 0;
 	border-radius: 4px;
 	display: inline-block;
@@ -5538,3 +5536,248 @@ body.is-preload .spotlight.onload-image-fade-in .image img {
 	padding:0;
 	margin: 0;
 }
+ */
+
+
+
+
+/* row inserted from tessellate.html */
+			
+/* #tess header p {
+	display: block;
+	margin: 0;
+	padding: 0.25em 0 0.5em 0;
+}
+
+#tess header {
+	margin-bottom: 1em;
+} */
+
+
+			/* Main Sections */
+
+			#tess .main {
+				position: relative;
+				margin: 0;
+			}
+		
+			#tess .main > header {
+					background: #fff;
+					text-align: center;
+					padding: 5em 0 5em 0;
+					margin: 0;
+				}
+		
+				#tess .main#tess .main  > header h2 {
+						font-size: 2.25em;
+						font-weight: 100;
+						margin-bottom: 0;
+					}
+		
+					#tess .main  > header p {
+						margin: 2em 0 0 0;
+						padding: 0;
+						text-align: center;
+					}
+		
+				#tess .main  > .content {
+					padding: 6em 0 6em 0;
+				}
+		
+					#tess .main  > .content h3 {
+						font-size: 1.5em;
+					}
+		
+					#tess .main > .content.dark {
+						background: #433;
+					}
+		
+					#tess .main > .content.style1 {
+						background: url("images/bgtr.svg") top right no-repeat, url("images/bgbl.svg") bottom left no-repeat, url("images/bgbl.svg") bottom left no-repeat, url("images/overlay.png"), linear-gradient(45deg, #b39c68, #a56365, #412e4c);
+					}
+		
+					#tess .main  > .content.style2 {
+						background: url("images/bgtr.svg") top right no-repeat, url("images/bgbl.svg") bottom left no-repeat, url("images/overlay.png"), linear-gradient(45deg, #384955, #655361, #85505f);
+					}
+		
+					#tess .main  > .content.style3 {
+						background: url("images/bgtr.svg") top right no-repeat, url("images/bgbl.svg") bottom left no-repeat, url("images/overlay.png"), linear-gradient(45deg, #5f796b, #3a4e59, #2f394e);
+					}
+		
+					#tess .main > .content.style4 {
+						padding-top: 0;
+						background: #fff;
+					}
+		
+					#tess .dark {
+						color: #aaa;
+						color: rgba(255, 255, 255, 0.65);
+					}
+		
+			/* Image */
+		
+			#tess .image {
+				position: relative;
+				display: inline-block;
+				border: 0;
+			}
+		
+				#tess .image:after {
+					content: '';
+					position: absolute;
+					left: 0;
+					top: 0;
+					width: 100%;
+					height: 100%;
+					background: url("images/overlay.png");
+				}
+		
+				#tess .image img {
+					display: block;
+					width: 100%;
+					border-radius: 0.5em;
+				}
+		
+				#tess .image.featured {
+					display: block;
+					width: 100%;
+					margin: 0 0 2em 0;
+				}
+		
+				#tess .image.fit {
+					display: block;
+					width: 100%;
+				}
+				
+				#tess footer {
+				padding-top: 1.5em;
+			}
+		
+			#tess .row > * {
+					box-sizing: border-box;
+				}
+		
+				#tess .row {
+				display: flex;
+				flex-wrap: wrap;
+				box-sizing: border-box;
+				align-items: stretch;
+			}
+		
+					/* Container */
+		
+			#tess .container {
+				margin: 0 auto;
+				max-width: 100%;
+				width: 1360px;
+			}
+		
+				#tess .container.medium {
+					width: 1020px;
+				}
+		
+				@media screen and (max-width: 1680px) {
+		
+					#tess .container {
+						width: 1200px;
+					}
+		
+						#tess .container.medium {
+							width: 900px;
+						}
+		
+				}
+		
+				@media screen and (max-width: 1280px) {
+		
+					#tess .container {
+						width: 960px;
+					}
+		
+						#tess .container.medium {
+							width: 720px;
+						}
+		
+					/* Main Sections */
+		
+					#tess .main > header {
+						padding: 4em 0 4em 0;
+					}
+		
+					#tess .main > .content {
+						padding: 4em 0 4em 0;
+					}
+		
+				}
+		
+				@media screen and (max-width: 1000px) {
+		
+					#tess .container {
+						width: 100% !important;
+					}
+		
+					/* Main Sections */
+		
+					#tess .main {
+						margin: 0 !important;
+					}
+		
+						#tess .main > header {
+							padding: 3.5em 2em 3.5em 2em;
+						}
+		
+							#tess .main > header h2 {
+								font-size: 1.85em;
+							}
+		
+							#tess .main > header br {
+								display: none;
+							}
+		
+							#tess .main > header p {
+								margin: 1.5em 0 0 0;
+							}
+		
+						#tess .main > .content {
+							padding: 3.5em 20px 3.5em 20px;
+						}
+		
+							#tess .main > .tess-content > #tess .container > :last-child {
+								margin-bottom: 0 !important;
+							}
+		
+		
+							#tess .row > .col-12-narrow {
+							width: 100%;
+						}
+		
+				}
+		
+				@media screen and (max-width: 736px) {
+					
+					/* Main Sections */
+		
+					#tess .main > header {
+						padding: 3em 20px 3em 20px;
+					}
+		
+						#tess .main > header h2 {
+							font-size: 1.5em;
+						}
+		
+					#tess .main > .tess-content {
+						padding: 3em 20px 3em 20px;
+					}
+		
+						#tess .main > .tess-content h3 {
+							font-size: 1.25em;
+						}
+		
+						#tess section, article {
+						margin: 0 0 1.5em 0 !important;
+					}
+		
+					#tess .row > section, #tess .row > article {
+						margin: 0 0 1.5em 0 !important;
+					}
+				}

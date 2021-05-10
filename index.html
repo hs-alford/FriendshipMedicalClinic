@@ -308,6 +308,104 @@
 					margin-right: 1em;
 				}
 			}
+			
+			section#tess {
+				padding-top: 2em;
+				padding-bottom: 2em;
+			}
+
+			#imageboxes .col-6 {
+				position: relative;
+				/* opacity: .8; */
+			}
+
+			#imageboxes .img {
+				opacity: 1;
+				display: block;
+				width: 100%;
+				height: auto;
+				transition: .5s ease;
+				backface-visibility: hidden;
+			}
+
+			#imageboxes .middle {
+				transition: .5s ease;
+				opacity: 0;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				-ms-transform: translate(-50%, -50%);
+				text-align: center;
+			}
+
+			#imageboxes .col-6:hover .img {
+				opacity: 0.4;
+				
+			}
+
+			#imageboxes .col-6:hover .middle {
+				opacity: 1;
+			}
+
+			
+
+			#imageboxes .centered {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				font-size: xx-large;
+				font-weight: bolder;
+				text-shadow:2px 2px 0 #444;
+			}
+
+			#imageboxes .overlay {
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				height: 100%;
+				width: 100%;
+				opacity: 0;
+				transition: .3s ease;
+				background-color:#203e64;
+			}
+
+			#imageboxes .col-6:hover .overlay {
+				opacity: 1;
+			}
+			
+			#imageboxes .icon {
+				color: white;
+				font-size: 5em;
+				position: absolute;
+				top: 40%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				-ms-transform: translate(-50%, -50%);
+				text-align: center;
+			}
+
+			#imageboxes .text {
+				color: white;
+				position: absolute;
+				font-size: 2em;
+				top: 70%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				-ms-transform: translate(-50%, -50%);
+				text-align: center;
+			}
+
+			.fa-user:hover {
+				color: #eee;
+			}
+
+			#tess p, h1, h2, h3, h4 {
+				color: #eee;
+			}
 		</style>
 	</head>
 	<body class="homepage is-preload landing">
@@ -372,30 +470,23 @@
 				<nav id="nav">
 					<ul>
 						<li class="current"><a href="index.html">Home</a></li>
+						<li><a href="services.html">Services</a></li>
 						<li>
-							<a href="services.html">Services</a>
+							<a href="paitentinfo.html">Patient Information</a>
 							<ul>
-								<li><a href="services.html">Our Serivces</a></li>
-								<li>
-									<a href="paitentinfo.html">Paitents</a>
-								</li>
-								<li><a href="outreach.html">Community Outreach</a></li>
-							</ul>
-						</li>
-						<li>
-							<a href="about_us.html">Who We Are</a>
-							<ul>
+								<li><a href="paitentinfo.html">Patient Information</a></li>
 								<li><a href="about_us.html">About Us</a></li>
 								<li><a href="mission.html">Our Mission</a></li>
 								<li><a href="history.html">History</a></li>
 								<li><a href="team.html">Meet The Team</a></li>
-								<li><a href="the_board.html">Board Members</a></li>
+								<li></li>
 								<li><a href="benefits.html">Why We Benefit Everyone</a></li>
 							</ul>
 						</li>
 						<li>
-							<a href="how_to_help.html">Getting Involved</a>
+							<a href="outreach.html">Community Outreach</a>
 							<ul>
+								<li><a href="outreach.html">Community Outreach</a></li>
 								<li><a href="how_to_help.html">How You Can Help</a></li>
 								<li><a href="volunteer.html">Voluenteering</a></li>
 								<li><a href="giving.html">Giving</a></li>
@@ -482,7 +573,7 @@
 										<!-- Highlight -->
 											<section class="box highlight">
 												<ul class="special">
-													<li><a href="paitentinfo.html" class="icon solid fa-notes-medical"><span class="linktext">Paitent Info</span></a></li>
+													<li><a href="paitentinfo.html" class="icon solid fa-notes-medical"><span class="linktext">Patient Info</span></a></li>
 													<li><a href="services.html" class="icon solid fa-stethoscope"><span class="linktext">Our Services</span></a></li>
 													<li><a href="outreach.html" class="icon solid fa-hand-holding-heart"><span class="linktext">Community Work</span></a></li>
 													<li><a href="contact.html" class="icon solid fa-phone-square-alt"><span class="linktext">Contact Us</span></a></li>
@@ -506,95 +597,150 @@
 					
 <!-- ============================================== HISTORY AND GOALS ROW ============================================== -->
 
-				<div id="wrapper" class="divided row-4-sect">
-						<!-- Two -->
-					<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="first">
-						<div class="content">
-							<h2>Our Clinic's History</h2>
-							<p>
-								Founded in 1965, Friendship Medical Clinic & Pharmacy is the oldest free medical 
-								clinic in South Carolina. The roots of 
-								Friendship Medical Clinic & Pharmacy extend back to during some of the worst times in the 
-								fight for civil rights, but through the foresight of a creative teacher wanting to help students see beyond the 
-								color of a person's skin, their project of helping people receive medical care has continued long after their 
-								graduation in 1968. Friendship Medical Clinic & Pharmacy turned 50 years old in 2015! 
-							</p>
-							<ul class="actions stacked">
-								<li><a href="#" class="button">Learn More</a></li>
-							</ul>
+				<!-- Second --> 
+			<div class="container-fluid" style="background-color: #3b3552;">
+				<section id="tess" class="main">
+					<!-- <header>
+						<div class="container">
+							<h2>Euismod sed feugiat lorem tempus magna</h2>
+							<p>Gravida dis placerat lectus ante vel nunc euismod eget ornare varius gravida euismod lorem ipsum dolor sit amet consequat<br />
+							feugiat. Gravida dis placerat lectus ante vel nunc euismod eget ornare varius gravida euismod lorem ipsum dolor sit amet.</p>
 						</div>
-						<div class="image">
-							<img src="images/hands.jpg" alt="" class="w3-card-4" />
+					</header> -->
+					<div class="content dark style2">
+						<div class="container">
+							<div class="row">
+								<div class="col-4 col-12-narrow">
+									<section>
+										<h3>Augue vivamus sed ipsum commodo lorem dolor</h3>
+										<p>Gravida dis placerat lectus ante vel nunc euismod est turpis sodales. Diam
+										tempor dui lacinia eget ornare varius gravida. Gravida dis placerat lectus ante
+										vel nunc euismod est turpis sodales. Diam tempor dui lacinia accumsan vivamus
+										augue cubilia vivamus nisi eu eget ornare varius gravida euismod.  Gravida dis
+										lorem ipsum dolor placerat magna tempus feugiat.</p>
+										<p>Lectus ante vel nunc euismod est turpis sodales. Diam tempor dui lacinia
+										accumsan vivamus augue cubilia vivamus nisi eu eget ornare varius gravida dolore
+										euismod lorem ipsum dolor.</p>
+										<footer>
+											<a href="#third" class="button scrolly">Accumsan nisi tempor</a>
+										</footer>
+									</section>
+								</div>
+								<div class="col-8 col-12-narrow">
+									<div id="imageboxes" class="row">
+										<div class="col-6">
+											<a href="#" class="image fit">
+												<img src="images/CMCMammography copy.jpg" alt="" class="img" />
+												<!-- <div class="centered">Outreach</div> -->
+												<div class="overlay">
+													<div class="text">Outreach</div>
+													<div class="icon">
+														<i class="fas fa-hand-holding-heart"></i>
+													</div>
+													
+												</div>
+												<!-- <div class="middle">
+													<div class="text"></div>
+												  </div> -->
+											</a>
+										</div>
+										
+										<div class="col-6">
+											<a href="#" class="image fit">
+												<img src="images/fingerprick.jpg" alt="" class="img" />
+												<div class="overlay">
+													<div class="icon">
+														<i class="far fa-handshake"></i>
+													</div>
+													<div class="text">Giving</div>
+												</div>
+												<!-- <div class="centered">Giving</div> -->
+												<!-- <div class="middle">
+													<div class="text">About The Clinic</div>
+												  </div> -->
+											</a>
+										</div>
+										<div class="col-6">
+											<a href="#" class="image fit">
+												<img src="images/robynwithPatient-1copy1.jpeg" alt="" class="img" />
+												<div class="overlay">
+													<div class="icon">
+														<i class="fas fa-notes-medical"></i>
+													</div>
+													<div class="text">Eligibility</div>
+												</div>
+												<!-- <div class="centered">Patient Eligibility</div> -->
+												<!-- <div class="middle">
+													<div class="text">John Doe</div>
+												  </div> -->
+											</a>
+										</div>
+										<div class="col-6">
+											<a href="#" class="image fit">
+												<img src="images/medicalStudentwithRobyncopy_2.jpeg" alt="" class="img" />
+												<div class="overlay">
+													<div class="icon">
+														<i class="fas fa-users"></i>
+													</div>
+													<div class="text">Volunteering</div>
+												</div>
+												<!-- <div class="centered">Volunteering</div> -->
+												<!-- <div class="middle">
+													<div class="text">John Doe</div>
+												  </div> -->
+											</a>
+										</div>
+										<div class="col-6">
+											<a href="#" class="image fit">
+												<img src="images/PatientVolunteerNursecopy1.jpg" alt="" class="img" />
+												<div class="overlay">
+													<div class="icon">
+														<i class="fas fa-user-md"></i>
+													</div>
+													<div class="text">Our Team</div>
+												</div>
+												<!-- <div class="centered">Our Team</div> -->
+												<!-- <div class="middle">
+													<div class="text">John Doe</div>
+												  </div> -->
+											</a>
+										</div>
+										<div class="col-6">
+											<a href="#" class="image fit">
+												<img src="images/masked_doc.jpg" alt="" class="img" />
+												<div class="overlay">
+													<div class="icon">
+														<i class="far fa-edit"></i>
+													</div>
+													<div class="text">About Us</div>
+												</div>
+												<!-- <div class="centered">About The Clinic</div> -->
+												<!-- <div class="middle">
+													<div class="text">John Doe</div>
+												  </div> -->
+											</a>
+										</div>
+										<!-- <div class="col-6"><a href="#" class="image fit"><img src="images/fingerprick.jpg" alt="" /></a></div>
+										<div class="col-6"><a href="#" class="image fit"><img src="images/robynwithPatient-1copy1.jpeg" alt="" /></a></div>
+										<div class="col-6"><a href="#" class="image fit"><img src="images/medicalStudentwithRobyncopy_2.jpeg" alt="" /></a></div>
+										<div class="col-6"><a href="#" class="image fit"><img src="images/PatientVolunteerNursecopy1.jpg" alt="" /></a></div>
+										<div class="col-6"><a href="#" class="image fit"><img src="images/masked_doc.jpg" alt="" /></a></div> -->
+									</div>
+								</div>
+							</div>
 						</div>
-					</section>
-
-				<!-- Three -->
-					<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
-						<div class="content">
-							<h2>Community Outreach</h2>
-							<p>
-								Conway Medical Center and Conway Medical Center Foundation agreed 16 years ago to 
-								partner with Friendship Medical Clinic & Pharmacy in providing health care to low-income 
-								residents in Horry County. Without their support the clinic would have great difficulty 
-								in securing diagnostic tests and medical procedures as well as maintaining the clinic facility.
-								Our many partners make it possible for us to give paitents the care they deserve and do the work 
-								we do.
-							</p>
-							<ul class="actions stacked">
-								<li><a href="#" class="button">Learn More</a></li>
-							</ul>
-						</div>
-						<div class="image">
-							<img src="images/CMCMammography.jpg" alt="" class="w3-card-4"/>
-						</div>
-					</section>
-
-				<!-- Four -->
-					<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in">
-						<div class="content">
-							<h2>Giving</h2>
-							<p>
-								It takes individuals, families, churches, civic groups, businesses, corporations, 
-								United Way of Horry County, Grants, Conway Medical Center, Conway Medical Center 
-								Foundation and Fundraisers to uphold our mission and maintain such diverse and 
-								high-quality medical care services for our patients. Here you can learn more about 
-								how you can help or make a donation.
-							</p>
-							<ul class="actions stacked">
-								<li><a href="#" class="button">Learn More</a></li>
-							</ul>
-						</div>
-						<div class="image">
-							<img src="images/robynwithpatient-1.jpg" alt="" class="w3-card-4" />
-						</div>
-					</section>
-
-					<!-- five -->
-					<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
-						<div class="content">
-							<h2>Paitent Information</h2>
-							<p>
-								Friendship Medical Clinic & Pharmacy exists to provide a primary medical 
-								care home for those who are uninsured and financially unable to get routine 
-								medical care. If you are intrested to see if you meet the requirements, get
-								applicaiton information, or lean about our services click here.
-							</p>
-							<ul class="actions stacked">
-								<li><a href="#" class="button">Learn More</a></li>
-							</ul>
-						</div>
-						<div class="image">
-							<img src="images/medicalStudentwithRobyn copy 2.jpg" alt="" class="w3-card-4" />
-						</div>
-					</section>
+					</div>
+				</section>
 			</div>
-					
+
+
+
 	</section>
 			
 			<!-- Footer -->
 				<footer id="footer">
 					<div class="container-fluid">
-						<div class="row" id="footer-row-1" >
+						<!-- <div class="row" id="footer-row-1" >
 							<div class="col-3 col-6-medium col-12-small">
 								
 								<img src="images/fmclogo.jpg" alt="Alps">
@@ -605,7 +751,7 @@
 										<td class="linkheader">Clinic Services</td>
 									</tr>
 									<tr>
-										<td><a href="paitentinfo.html">Paitent Information</a></td>
+										<td><a href="paitentinfo.html">Patient Information</a></td>
 									</tr>
 									<tr>
 										<td><a href="services.html">Our Services</a></td>
@@ -655,14 +801,14 @@
 										<td><a href="team.html">Meet the Team</a></td>
 									</tr>
 									<tr>
-										<td><a href="the_board.html">Board Members</a></td>
+										<td></td>
 									</tr>
 									<tr>
 										<td><a href="benefits.html">How We Benifit Everyone</a></td>
 									</tr>
 								</table>
 							</div>
-						</div>
+						</div> -->
 						
 						<div class="row" id="footer-row-2">
 							<div class="col-4 col-6-medium col-12-small">								
@@ -682,7 +828,7 @@
 									<div class="underline" style="margin-bottom: 1em;margin-left: 6em;margin-right:6em;"></div>
 									<p style="margin-bottom: 1em;">
 										Phone: 843-347-7199 Fax: 843-347-7180<br>
-										Paitent Line: 843-347-7178
+										Patient Line: 843-347-7178
 									</p>
 									<div class="underline" style="margin-bottom: 1em;margin-left: 6em;margin-right:6em"></div>
 									<p>

@@ -2961,8 +2961,7 @@ input, select, textarea {
 	#footer {
 		height: 27em;
 		text-align: center;
-		padding: 0 0 0 0;
-	
+		padding: 0 0 0 0;	
 	}
 
 		#footer a {
@@ -3053,7 +3052,7 @@ input, select, textarea {
 	#footer-row-2 {
 		margin-top: 0;
 		margin-bottom:3.1em;
-		padding: 0 4em 0 4em;
+		padding: 3em 4em 0 4em;
 		background-color: #203e64;
 	}
 
@@ -5610,7 +5609,7 @@ body.is-preload .spotlight.onload-image-fade-in .image img {
 					}
 		
 					#tess .dark {
-						color: #aaa;
+						color: rgb(78, 78, 78);
 						color: rgba(255, 255, 255, 0.65);
 					}
 		

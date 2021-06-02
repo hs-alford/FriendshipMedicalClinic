@@ -16,6 +16,24 @@
 			h3 {
 				font-size: 1.7em;
 			}
+			.row {
+				padding-top: 2em;
+				padding-bottom:2em;
+			}
+			.h-line {
+				border:solid 4px #cacaca;
+				border-radius: 8px;
+			}
+			#mail.col-6 {
+				border-left:solid 6px rgba(202, 202, 202, 0.74);
+				border-radius: 2px;
+				margin-top: 1em;
+				margin-bottom: 1em;
+				padding-left: 5em;
+			}
+			#online.col-6 {
+				padding-right: 5em;
+			}
 		</style>
 	</head>
 	<body class="is-preload">
@@ -67,70 +85,68 @@
 
 									<!-- Content -->
 
-										<article class="box page-content" style="padding-top: 50px;">
+										<article class="box page-content" style="padding-top: 1em">
 
 											<header>
 												<h2>Donations</h2>
-												<p>Semper amet scelerisque metus faucibus morbi congue mattis</p>
-												
+												<p>
+													Your donations help provide services to those who otherwise would have no access to care. 
+													Whatever your contribution is, (be it time, energy, or financial) we thank you for your 
+													help to heal our community.
+												</p>
+												<div class="h-line" style="margin-top:2em"></div>
 											</header>
 
-											<!-- <section>
-												<span class="image featured"><img src="images/pic05.jpg" alt="" /></span>
-												<p>
-													Phasellus quam turpis, feugiat sit amet ornare in, hendrerit in lectus.
-													Praesent semper mod quis eget mi. Etiam eu ante risus. Aliquam erat volutpat.
-													Aliquam luctus et mattis lectus sit amet pulvinar. Nam turpis nisi
-													consequat etiam lorem ipsum dolor sit amet nullam.
-												</p>
-											</section> -->
-
-											<section>
-												
-												<div class="box" >
-													<form method="post" action="#">
-														<div class="row gtr-50 gtr-uniform">
-															<div class="col-6 col-12-mobilep">
-																<input type="text" name="name" id="name" value="" placeholder="Name" />
-															</div>
-															<div class="col-6 col-12-mobilep">
-																<input type="email" name="email" id="email" value="" placeholder="Email" />
-															</div>
-															<div class="col-12">
-																<input type="text" name="subject" id="subject" value="" placeholder="Subject" />
-															</div>
-															<div class="col-12">
-																<textarea name="message" id="message" placeholder="Enter your message" rows="6"></textarea>
-															</div>
-															<div class="col-12">
-																<ul class="actions special">
-																	<li><input type="submit" value="Send Message" /></li>
-																</ul>
-															</div>
-														</div>
-													</form>
+											
+											<div class="row">
+												<div class="col-6" id="online">
+													<section>
+														<h3>Make A Donation Online</h3>
+														<p>
+															Online donations can be made easily and securely through PayPal, making an account is not
+															required. Just click the blue donate button below and you'll be taken to the page to make
+															your donation.
+														</p>
+														<form action="https://www.paypal.com/donate" method="post" target="_top">
+															<input type="hidden" name="hosted_button_id" value="GDEN9ZX7PXZPU" />
+															<input type="image" src="https://dabuttonfactory.com/button.jpg?t=Donate&f=Ubuntu-Bold&ts=24&tc=fff&tshs=1&tshc=000&hp=60&vp=24&c=round&bgt=unicolored&bgc=6fa8dc" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+															<img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+															</form>
+															
+														
+													</section>
 												</div>
-											</section>
+												<div class="col-6" id="mail" >
+													<section>
+														<h3>Mailing Donations</h3>
+														<p>
+															To make donation by mail, send to our address:
+															<br><br>
+															Friendship Medical Clinic & Pharmacy<br>
+															1396 Highway 544<br>
+															Conway, SC 29526
+														</p>
+													</section>
+												</div>
+											</div>
 
-											<section>
-												<h3>Friendship Medical Clinic And Pharmacy</h3>
-												<p>
-													Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac quam risus, at tempus
-													justo. Sed dictum rutrum massa eu volutpat. Quisque vitae hendrerit sem. Pellentesque lorem felis,
-													ultricies a bibendum id, bibendum sit amet nisl. Mauris et lorem quam. Maecenas rutrum imperdiet
-													vulputate. Nulla quis nibh ipsum, sed egestas justo. Morbi ut ante mattis orci convallis tempor.
-													Etiam a lacus a lacus pharetra porttitor quis accumsan odio. Sed vel euismod nisi. Etiam convallis
-													rhoncus dui quis euismod. Maecenas lorem tellus, congue et condimentum ac, ullamcorper non sapien.
-													Donec sagittis massa et leo semper a scelerisque metus faucibus. Morbi congue mattis mi.
-													Phasellus sed nisl vitae.
-												</p>
-												<h3>Maps and Directions</h3>
-												<p>
-													Suspendisse laoreet metus ut metus imperdiet interdum aliquam justo tincidunt. Mauris dolor urna,
-													fringilla vel malesuada ac, dignissim eu mi. Praesent mollis massa ac nulla pretium pretium.
-													Maecenas tortor mauris, consectetur pellentesque dapibus eget, tincidunt vitae arcu.
-												</p>
-											</section>
+											<div class="row">
+												<div class="col-12">
+													<section>
+														<p>
+															Friendship Medical Clinic, Inc. is an IRS 501(c )(3) nonprofit organization. 
+															All mailed donations will receive a donation receipt letter for tax purposes.
+															<br><br>
+															In 2007 Friendship Medical Clinic & Pharmacy, was recognized by the Secretary of State, as being in the top 10 nonprofits in the state of South Carolina as 94.2% of its total expenses was devoted to program services.
+															<br><br>
+															<b>This recognition can only be obtained once.</b>
+														</p>
+														<p >
+															
+														</p>
+													</section>
+												</div>
+											</div>
 
 										</article>
 
@@ -148,75 +164,6 @@
 				<!-- Footer -->
 				<footer id="footer">
 					<div class="container-fluid">
-						<!-- <div class="row" id="footer-row-1" >
-							<div class="col-3 col-6-medium col-12-small">
-								
-								<img src="images/fmclogo.jpg" alt="Alps">
-							</div>
-							<div class="col-3 col-6-medium col-12-small" id="footer-clinic">
-								<table>
-									<tr>
-										<td class="linkheader">Clinic Services</td>
-									</tr>
-									<tr>
-										<td><a href="paitentinfo.html">Patient Information</a></td>
-									</tr>
-									<tr>
-										<td><a href="services.html">Our Services</a></td>
-									</tr>
-									<tr>
-										<td><a href="outreach.html">Community Outreach</a></td>
-									</tr>
-									<tr>
-										<td><a href="contact.html">Contact Us</a></td>
-									</tr>
-									<tr>
-										<td><a href="donate.html">Donate</a></td>
-									</tr>
-								</table>
-							</div>
-							<div id="footer-helping" class="col-3 col-6-medium col-12-small">
-								<table>
-									<tr>
-										<td class="linkheader">Getting Involved</td>
-									</tr>
-									<tr>
-										<td><a href="how_to_help.html">How You Can Help</a></td>
-									</tr>
-									<tr>
-										<td><a href="volunteer.html">Volunteering</a></td>
-									</tr>
-									<tr>
-										<td><a href="giving.html">Giving</a></td>
-									</tr>
-								</table>
-							</div>
-							<div id="footer-about" class="col-3 col-6-medium col-12-small">
-								<table>
-									<tr>
-										<td class="linkheader">Who We Are</td>
-									</tr>
-									<tr>
-										<td><a href="about_us.html">About Us</a></td>
-									</tr>
-									<tr>
-										<td><a href="mission.html">Our Mission</a></td>
-									</tr>
-									<tr>
-										<td><a href="history.html">History</a></td>
-									</tr>
-									<tr>
-										<td><a href="team.html">Meet the Team</a></td>
-									</tr>
-									<tr>
-										<td></td>
-									</tr>
-									<tr>
-										<td><a href="benefits.html">How We Benifit Everyone</a></td>
-									</tr>
-								</table>
-							</div>
-						</div> -->
 						
 						<div class="row" id="footer-row-2">
 							<div class="col-4 col-6-medium col-12-small">								

@@ -2629,6 +2629,7 @@ input, select, textarea {
 	#header {
 		text-align: center;
 		background-color: white;
+		border-bottom: solid 2em #203e64;
 	}
 
 	/* #header {
@@ -2819,9 +2820,6 @@ input, select, textarea {
 
 /* Banner */
 
-	
-
-
 
 				#banner {
 					position: relative;
@@ -2843,7 +2841,7 @@ input, select, textarea {
 						background-repeat: repeat, no-repeat;
 						text-align: center;
 						margin: 0 4em 0 4em;
-						padding: 2em 1em 2em 1em;
+						padding: 6em 1em 2em 1em;
 					}
 			
 						#banner .content h2 {
@@ -2895,11 +2893,8 @@ input, select, textarea {
 /* Main */
 
 	#main {
-		background: #fff;
-		border-top: solid 5px #203e64;
-		
-		border-top-width: 35px;
-		padding: 0em 0 5em 0;
+		background: #fff;	
+		padding: 3em 0 5em 0;
 	}
 
 	.hyperlink {
@@ -3053,7 +3048,7 @@ input, select, textarea {
 		margin-top: 0;
 		margin-bottom:3.1em;
 		padding: 3em 4em 0 4em;
-		background-color: #203e64;
+		background-color: #112136;
 	}
 
 	#footer-row-2 i {
@@ -3073,7 +3068,7 @@ input, select, textarea {
 
 	#footer-row-3 {
 		padding-top: 1em;
-		background-color: #203e64;
+		background-color: #112136;
 		color: white;
 	}
 

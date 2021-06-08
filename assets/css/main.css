@@ -2904,6 +2904,7 @@ input, select, textarea {
 	header p {
 		color: #4f88bd;
 		text-transform: capitalize;
+		font-style: italic;
 	}
 
 /* Sidebar + Content */

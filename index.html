@@ -471,6 +471,42 @@
 				color: white;
 				text-align: center;
 			}
+
+			
+			.clearfix::after {
+			content: "";
+			clear: both;
+			display: table;
+			}
+
+
+			.clearfix p {
+				margin-bottom: 1em;
+			}
+
+			#history-row-v3 .row {
+				padding-top: 2em;
+				padding-bottom: 2em;
+				
+
+				border-bottom:solid 2px rgba(128, 128, 128, 0.295);
+			}
+
+
+			.clearfix img {
+				float: left;
+				height: 14em;
+				width: 14em;
+				margin-right:2em;
+			}
+
+			.clearfix h2 {
+				font-size: 1.4em;
+			}
+			
+			#history-side h3 {
+				font-size: 2em;
+			}
 		</style>
 	</head>
 	<body class="homepage is-preload landing">
@@ -595,7 +631,7 @@
 					<div class="row" id="mission" style="background-color: #ffffff;">
 						<div class="container">
 							<div class="col-12">
-								<div class="content mission tile" >
+								<div class="content mission tile">
 									<section  style="text-align: center;padding-top: 5em;">
 										<i class='fas fa-globe' style='color:#4f88bd;opacity: .3;'></i>
 										<h3>Our Mission</h3>
@@ -771,100 +807,181 @@
 
 				<!-- ============================================== CLINIC HISTORY ROW ============================================== -->
 				
-				
-				<div class="container-fluid" style="background-color: #203e64;padding-top: 2em;padding-bottom:0;">
-				
-						<div class="row">
-							<div class="container">
-								<div class="content">
-									<div id="history">
-										<h3>Our Clinic's History</h3>
-										<div style="border-bottom: solid 5px #ffffffcc;padding-top:1em"></div>
-										<p>
-											In 1965, a group of Myrtle Beach High School students formed the Community Service Council.  The mission of the organization was to serve the community 
-											by assisting low-income residents in need.  This organization was the beginning of the present-day Friendship Medical Clinic.
-										</p>
+				<div id="history-v4">
+					<div class="wrapper style3">
+						<div class="inner">
+							<div class="container-fluid" style="padding-left: 2em; padding-right: 2em;">
+								<div class="row">
+									<div class="col-8 col-12-medium">
+	
+										<!-- Article list -->
+											<section class="box article-list">
+												<h2>A Timeline Of Highlights</h2>
+	
+												<!-- Excerpt -->
+													<article class="box excerpt">
+														<a href="#" class="image left"><img src="images/pic04.jpg" alt="" /></a>
+														<div>
+															<header>
+																<span class="date">1976</span>
+																<h3><a href="#">Community Of Volunteer Services (CVS)</a></h3>
+															</header>
+															<p >
+																Starting out, the organization was much less equipped and, for a while,
+																it did not have a physical location. Despite this, through the work from 
+																the volunteers and generosity from the community, they were able to grow over time.
+						
+															</p>
+															<button id="btn1" class="button alt">Read More</button>
+														</div>
+													</article>
+	
+												<!-- Excerpt -->
+													<article class="box excerpt">
+														<a href="#" class="image left"><img src="images/pic05.jpg" alt="" /></a>
+														<div>
+															<header>
+																<span class="date">1980</span>
+																<h3><a href="#">The Friendship House</a></h3>
+															</header>
+															<p>
+																Once the organization was able to acquire a physical location, CVS was changed to, 
+																“The Friendship House”. The clinic continued to grow and offer more services to 
+																their patients.
+															</p>
+															<button id="btn2" class="button alt">Read More</button>
+														</div>
+													</article>
+
+												<!-- Excerpt -->
+												<article class="box excerpt">
+													<a href="#" class="image left"><img src="images/pic06.jpg" alt="" /></a>
+													<div>
+														<header>
+															<span class="date">1997</span>
+															<h3><a href="#">A Pharmacy Is Born</a></h3>
+														</header>
+														<p>
+															Medication supply become an issue, and the clinic is unable to purchase enough medications 
+															for patients. To fix this, they ask a pharmacist name Patty Gresko, to set up a 
+															state-licensed pharmacy and Patient Assistance Program (PAP).
+														</p>
+														<button id="btn3" class="button alt">Read More</button>
+													</div>
+												</article>
+	
+												<!-- Excerpt -->
+													<article class="box excerpt">
+														<a href="#" class="image left"><img src="images/pic06.jpg" alt="" /></a>
+														<div>
+															<header>
+																<span class="date">2001 - Present</span>
+																<h3><a href="#">Friendship Medical Clinic & Pharmacy</a></h3>
+															</header>
+															<p>
+																The Friendship House receives a $150,000, three year grant, from the Duke Endowment Foundation. 
+																The name is then changed to what it is known as now, “Friendship Medical Clinic and Pharmacy”.
+															</p>
+															<button id="btn4" class="button alt">Read More</button>
+														</div>
+													</article>
+	
+											</section>
 									</div>
-									
-									
+									<div class="col-4 col-12-medium">
+	
+										<!-- Spotlight -->
+											<section class="box spotlight">
+												<h2>Our History</h2>
+												<article>
+													<a href="#" class="image featured"><img src="images/pic06.jpg" alt=""></a>
+													
+													<p style="font-size: 1.4em;">
+														In 1965, a group of Myrtle Beach High School students formed the Community Service Council.  The mission of the organization was to serve the community 
+														by assisting low-income residents in need.  This organization was the beginning of the present-day Friendship Medical Clinic.
+													</p>
+													<footer>
+														<a href="#" class="button alt icon solid fa-file-alt">Continue Reading</a>
+													</footer>
+												</article>
+											</section>
+	
+									</div>
 								</div>
 							</div>
 						</div>
-						<div class="row">
-							<div class="col-12" id="timeline-header">
+					</div>
+					
+				</div>
+				<!-- <div class="container-fluid" id="history-row-v3" style="padding:2em 2em;">
+					
+					<div class="row">
+						
+						<div class="col-8">
+							<div >
 								<h2>A Timeline Of Highlights</h2>
 							</div>
-							<!-- Content -->
-							<section id="cd-timeline" class="cd-container">
-								<div class="cd-timeline-block">
-									<div class="cd-timeline-img cd-picture">
-									</div>
-						
-									<div class="cd-timeline-content" >
-										<h2 >Community Of Volunteer Services (CVS)</h2>
-										<p>
-                                            Starting out, the organization was much less equipped and, for a while,
-                                            it did not have a physical location. Despite this, through the work from 
-											the volunteers and generosity from the community, they were able to grow over time.
+							<div class="row" style="">
+								<div class="clearfix">
+									<img src="images/hearticon.png" alt=""    />
+									<h2>Community Of Volunteer Services (CVS)</h2>
+									<p >
+										Starting out, the organization was much less equipped and, for a while,
+										it did not have a physical location. Despite this, through the work from 
+										the volunteers and generosity from the community, they were able to grow over time.
 
-										</p>
-										<button id="btn1" class="button alt">Read More</button>
-										<span class="cd-date" style="margin-left: 4em;font-size: 1.5em;">1976</span>
-									</div> <!-- cd-timeline-content -->
-								</div> <!-- cd-timeline-block -->
-						
-								<div class="cd-timeline-block">
-									<div class="cd-timeline-img cd-movie">
-									</div> <!-- cd-timeline-img -->
-						
-									<div class="cd-timeline-content">
-										<h2>The Friendship House</h2>
-										<p>
-											Once the organization was able to acquire a physical location, CVS was changed to, 
-											“The Friendship House”. The clinic continued to grow and offer more services to 
-											their patients.
-										</p>
-										<button id="btn2" class="button alt">Read More</button>
-										<span class="cd-date" style="margin-right: 4em;font-size: 1.5em;">1980</span>
-									</div> <!-- cd-timeline-content -->
-								</div> <!-- cd-timeline-block -->
-						
-								<div class="cd-timeline-block">
-									<div class="cd-timeline-img cd-picture">
-									</div> <!-- cd-timeline-img -->
-						
-									<div class="cd-timeline-content">
-										<h2>A Pharmacy Is Born</h2>
-										<p>
-											Medication supply become an issue, and the clinic is unable to purchase enough medications 
-											for patients. To fix this, they ask a pharmacist name Patty Gresko, to set up a 
-											state-licensed pharmacy and Patient Assistance Program (PAP).
-										</p>
-										<button id="btn3" class="button alt">Read More</button>
-										<span class="cd-date" style="margin-left: 4em;font-size: 1.5em;">1997</span>
-										
-									</div> <!-- cd-timeline-content -->
-								</div> <!-- cd-timeline-block -->
-						
-								<div class="cd-timeline-block">
-									<div class="cd-timeline-img cd-location">
-									</div> <!-- cd-timeline-img -->
-						
-									<div class="cd-timeline-content">
-										<h2>Friendship Medical Clinic & Pharmacy</h2>
-										<p>
-											The Friendship House receives a $150,000, three year grant, from the Duke Endowment Foundation. 
-											The name is then changed to what it is known as now, “Friendship Medical Clinic and Pharmacy”.
-										</p>
-										<button id="btn4" class="button alt">Read More</button>
-										<span class="cd-date" style="margin-right: 4em;font-size: 1.5em;">2001</span>
-									</div> <!-- cd-timeline-content -->
-								</div> <!-- cd-timeline-block -->
-						
-							</section> <!-- cd-timeline -->
-							<script src='https://use.fontawesome.com/4d74086fc6.js'></script>
+									</p>
+									<button id="btn1" class="button alt">Read More</button>
+								</div>
+							</div>
+							<div class="row" ">
+								<div class="clearfix">
+									<img src="images/survey.png" alt="" style="float: left;height: 14em;width: 14em;"   />
+									<h2>The Friendship House</h2>
+									<p>
+										Once the organization was able to acquire a physical location, CVS was changed to, 
+										“The Friendship House”. The clinic continued to grow and offer more services to 
+										their patients.
+									</p>
+									<button id="btn2" class="button alt">Read More</button>
+								</div>
+							</div>
+							<div class="row" >
+								<div class="clearfix">
+									<img src="images/meds.png" alt="" style="float: left;height: 14em;width: 14em;"   />
+									<h2>A Pharmacy Is Born</h2>
+									<p>
+										Medication supply become an issue, and the clinic is unable to purchase enough medications 
+										for patients. To fix this, they ask a pharmacist name Patty Gresko, to set up a 
+										state-licensed pharmacy and Patient Assistance Program (PAP).
+									</p>
+									<button id="btn3" class="button alt">Read More</button>
+								</div>
+							</div>
+							<div class="row" >
+								<div class="clearfix">
+									<img src="images/stethoscopeicon.png" alt="" style="float: left;height: 14em;width: 14em;"   />
+
+									<h2>Friendship Medical Clinic & Pharmacy</h2>
+									<p>
+										The Friendship House receives a $150,000, three year grant, from the Duke Endowment Foundation. 
+										The name is then changed to what it is known as now, “Friendship Medical Clinic and Pharmacy”.
+									</p>
+									<button id="btn4" class="button alt">Read More</button>
+								</div>
+							</div>
 						</div>
-				</div>
+						<div class="col-4" id="history-side">
+							<h3>Our Clinic's History</h3>
+							<div style="border-bottom: solid 5px #ffffffcc;padding-top:1em"></div>
+							<img src="images/annie-spratt-biVuafyC8oI-unsplash.jpg" src="" style="height: 15em;width: 20em;" />
+							<p>
+								In 1965, a group of Myrtle Beach High School students formed the Community Service Council.  The mission of the organization was to serve the community 
+								by assisting low-income residents in need.  This organization was the beginning of the present-day Friendship Medical Clinic.
+							</p>
+						</div>
+					</div>
+				</div> -->
 
 				<!-- The Modal -->
 				<div id="modal1" class="modal">

@@ -2907,6 +2907,10 @@ input, select, textarea {
 		font-style: italic;
 	}
 
+	#btn-group-2 {
+		margin-top: 30px;
+	}
+
 /* Sidebar + Content */
 
 	.sidebar h2.major {

@@ -1738,6 +1738,9 @@ input, select, textarea {
 		}
 
 /* Image */
+/* img {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+} */
 
 .imgtextcenter {
 	position: absolute;
@@ -2727,9 +2730,13 @@ input, select, textarea {
 
 /* Main */
 
+	p {
+		line-height: 1.8;
+	}						
+
 	#main {
 		background: #fff;	
-		padding: 3em 0 5em 0;
+		padding: 3em 0 10em 0;
 	}
 
 	.hyperlink {
@@ -2739,7 +2746,8 @@ input, select, textarea {
 	header p {
 		color: #4f88bd;
 		text-transform: capitalize;
-		font-style: italic;
+		line-height: 1.6;
+		/* font-style: italic; */
 	}
 
 	#btn-group-2 {
@@ -2893,7 +2901,13 @@ input, select, textarea {
 		font-weight: bold;
 	}
 
-	
+
+
+	/* side by side style */
+	.outer-flexbox {
+		display: flex;
+		align-items: flex-start;
+	}
 
 	
 /* Copyright */

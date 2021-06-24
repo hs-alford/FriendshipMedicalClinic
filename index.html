@@ -109,105 +109,6 @@
 				margin-left: 1.5em;
 				margin-right: 3em;
 			}
-			
-			section#tess {
-				padding-top: 6em;
-				padding-bottom: 6em;
-			}
-
-			#imageboxes .col-4 {
-				position: relative;
-				/* opacity: .8; */
-			}
-
-			#imageboxes .img {
-				opacity: 1;
-				display: block;
-				width: 100%;
-				height: auto;
-				transition: .5s ease;
-				backface-visibility: hidden;
-			}
-
-			#imageboxes .middle {
-				transition: .5s ease;
-				opacity: 0;
-				position: absolute;
-				top: 50%;
-				left: 50%;
-				transform: translate(-50%, -50%);
-				-ms-transform: translate(-50%, -50%);
-				text-align: center;
-			}
-
-			#imageboxes .col-4:hover .img {
-				opacity: 0.4;
-				
-			}
-
-			#imageboxes .col-4:hover .middle {
-				opacity: 1;
-			}
-
-			#imageboxes .centered {
-				position: absolute;
-				top: 50%;
-				left: 50%;
-				transform: translate(-50%, -50%);
-				font-size: xx-large;
-				font-weight: bolder;
-				text-shadow:2px 2px 0 #444;
-			}
-
-			#imageboxes .overlay {
-				position: absolute;
-				top: 0;
-				bottom: 0;
-				left: 0;
-				right: 0;
-				height: 100%;
-				width: 100%;
-				opacity: 0;
-				transition: .3s ease;
-				background-color:#4f88bd;
-			}
-
-			#imageboxes .col-4:hover .overlay {
-				opacity: 1;
-			}
-			
-			#imageboxes .icon {
-				color: white;
-				font-size: 5em;
-				position: absolute;
-				top: 40%;
-				left: 50%;
-				transform: translate(-50%, -50%);
-				-ms-transform: translate(-50%, -50%);
-				text-align: center;
-				text-shadow:2px 2px 0 #444;
-			}
-
-			#imageboxes .text {
-				color: white;
-				position: absolute;
-				font-size: 2.2em;
-				font-weight: bolder;
-				top: 70%;
-				left: 50%;
-				transform: translate(-50%, -50%);
-				-ms-transform: translate(-50%, -50%);
-				text-align: center;
-				text-shadow:3px 2px 3px #444;
-			}
-
-			.fa-user:hover {
-				color: #eee;
-			}
-
-			#tess p, h1, h2, h3, h4 {
-				color: rgb(65, 63, 63);
-			}
 
 			#donate-row {
 				padding: 4em 0 7em 0;
@@ -438,127 +339,9 @@
 					</div>
 				</div>
 
-				<!-- <div class="container" id="divider">
-					<div class="underline"></div>
-				</div> -->
-
-				<!-- ============================================== HISTORY AND GOALS ROW ============================================== -->
-				<!-- <div class="container-fluid" style="background-color:#ffffff;margin-bottom: 1em;">
-					<section id="tess" class="main">
-						<div style="padding-bottom:4em;">
-							<h2 style="color:#203e64;font-size: 2.5em;font-weight:bolder;text-align: center;">
-								Learn More About The Clinic And What We Do
-							</h2>
-						</div>
-						<div class="content dark style2">
-							<div class="container">
-								<div class="row">
-									
-									<div class="col-12 col-12-narrow"> 
-										<div id="imageboxes" class="row">
-											<div class="col-4">
-												<a href="#" class="image fit">
-													<img src="images/outreachgraphic.png" alt="" class="img" style="opacity: .9;" />
-													<div class="icon">
-														<i class="fas fa-hand-holding-heart"></i>
-													</div>
-													<div class="text">Outreach</div>
-													<div class="overlay">
-														<div class="text">Outreach</div>
-														<div class="icon">
-															<i class="fas fa-hand-holding-heart"></i>
-														</div>
-														
-													</div>
-												</a>
-											</div>
-											
-											<div class="col-4">
-												<a href="#" class="image fit">
-													<img src="images/giving-graphic.png" alt="" class="img" style="opacity: .9;" />
-													<div class="icon">
-														<i class="far fa-handshake"></i>
-													</div>
-													<div class="text">Giving</div>
-													<div class="overlay">
-														<div class="icon">
-															<i class="far fa-handshake"></i>
-														</div>
-														<div class="text">Giving</div>
-													</div>
-												</a>
-											</div>
-											<div class="col-4">
-												<a href="#" class="image fit">
-													<img src="images/nursemedical.png" alt="" class="img" id="backgroundfill" style="opacity: .9;" />
-													<div class="icon">
-														<i class="fas fa-notes-medical"></i>
-													</div>
-													<div class="text">Eligibility</div>
-													<div class="overlay">
-														<div class="icon">
-															<i class="fas fa-notes-medical"></i>
-														</div>
-														<div class="text">Eligibility</div>
-													</div>											
-												</a>
-											</div>
-											<div class="col-4">
-												<a href="#" class="image fit">
-													<img src="images/doctorgraphic.png" alt="" class="img" id="backgroundfill" style="opacity: .9;" />
-													<div class="icon">
-														<i class="fas fa-users"></i>
-													</div>
-													<div class="text">Volunteering</div>
-													<div class="overlay">
-														<div class="icon">
-															<i class="fas fa-users"></i>
-														</div>
-														<div class="text">Volunteering</div>
-													</div>													
-												</a>
-											</div>
-											<div class="col-4">
-												<a href="#" class="image fit">
-													<img src="images/team1.png" alt="" class="img" id="backgroundfill" style="opacity: .9;" />
-													<div class="icon">
-														<i class="fas fa-user-md"></i>
-													</div>
-													<div class="text">Our Team</div>
-													<div class="overlay">
-														<div class="icon">
-															<i class="fas fa-user-md"></i>
-														</div>
-														<div class="text">Our Team</div>
-													</div>
-												</a>
-											</div>
-											<div class="col-4">
-												<a href="#" class="image fit">
-													<img src="images/medicalBuilding.png" alt="" class="img" id="backgroundfill" style="opacity: .9;" />
-													<div class="icon">
-														<i class="far fa-edit"></i>
-													</div>
-													<div class="text">About Us</div>
-													<div class="overlay">
-														<div class="icon">
-															<i class="far fa-edit"></i>
-														</div>
-														<div class="text">About Us</div>
-													</div>
-												</a>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</section>
-				</div>
-
 				<div class="container" id="divider">
 					<div class="underline"></div>
-				</div> -->
+				</div> 
 
 				<!-- ============================================== CLINIC HISTORY ROW ============================================== -->
 				
@@ -648,7 +431,7 @@
 	
 										<!-- Spotlight -->
 											<section class="box spotlight">
-												<h2 style="padding-bottom: 1em;font-size: 2.3em;font-weight: bolder;color: #203e64;">Our History</h2>
+												<h2 style="padding-bottom: 1em;font-size: 2.3em;font-weight: bolder;color: #203e64;text-align: center;">Our History</h2>
 												<article>
 													<a href="#" class="image featured"><img src="images/barn.jpeg" alt="" ></a>
 													

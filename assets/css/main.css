@@ -149,6 +149,38 @@ input, select, textarea {
 				font-style: normal;
 			}
 
+			h3.major {
+				position: relative;
+				border-top: solid 2px #e7eae8;
+				font-size: 1.65em;
+				text-align: center;
+				margin: 0 0 1.4em 0;
+				top: 0.775em;
+			}
+	
+				h3.major span {
+					background: #fff;
+					position: relative;
+					display: inline-block;
+					top: -0.775em;
+					padding: 0 1.25em 0 1.25em;
+				}
+				
+
+				#section-heading {
+					color: #203e64;
+					text-align: left;
+					padding-left: 0;
+				}
+	
+				.content h2.major {
+					text-align: left;
+				}
+	
+				.content h3.major {
+					text-align: left;
+				}
+
 	h3, h4 {
 		font-size: 1.25em;
 	}
@@ -2729,6 +2761,21 @@ input, select, textarea {
 	
 
 /* Main */
+
+.h-line {
+	border:solid 2px #f0f0f0;
+	border-radius: 8px;
+}
+
+.underline {
+	margin-top: 5em;
+	margin-bottom: 0;
+	border-bottom: solid 3px #c7c7c7;
+	margin-left:10em;
+	margin-right: 10em;
+	opacity: .5;
+	border-radius: 10px;
+}
 
 	p {
 		line-height: 1.8;

@@ -46,6 +46,20 @@ $_POST["insert your message here"]. "From: an@email.address");
 				border:solid 2px #f0f0f0;
 				border-radius: 8px;
 			}
+
+			.outer-flexbox .pleft {
+				padding-left: 4em;
+			}
+
+			@media screen and (max-width: 780px) {
+				.outer-flexbox {
+					flex-wrap: wrap;
+					justify-content: flex-start;
+				}
+				.outer-flexbox .pleft {
+					padding-left: 0;
+				}
+			}
 			
 		</style>
 	</head>
@@ -138,7 +152,7 @@ $_POST["insert your message here"]. "From: an@email.address");
 											<section>
 												<h3 class="major"><span id="section-heading">Contact Information</span></h3>
 												<div class="outer-flexbox">
-													<p>
+													<p id="address">
 														<b>Our Address:</b><br>
 														Friendship Medical Clinic<br>
 														1396 Highway 544<br>
@@ -147,13 +161,13 @@ $_POST["insert your message here"]. "From: an@email.address");
 													
 												
 													
-													<p style="padding-left: 4em;">
+													<p class="pleft">
 														<b>Our Hours of Operation:</b><br>
 														Monday - Thursday<br>
 														8:30 a.m. - 4 p.m.
 													</p>
 													
-													<p style="padding-left: 4em;">
+													<p class="pleft">
 														<b>Patient Line information/appointments:</b> 843-347-7178 <br>
 														<b>All others phone:</b> 843-347-7199<br>
 														<b>Fax:</b> 843-347-7180<br>
@@ -200,31 +214,33 @@ $_POST["insert your message here"]. "From: an@email.address");
 							</div>
 						</div>
 						<div class="row" id="contact-row">
-							<div class="col-4">
+							<div class="col-4 col-12-small">
 								<div>
-									<h2 class="icon solid fa-home">  Mailing Address</h2>
+									<h2 class="icon solid fa-home">  Address</h2>
 									<p style="margin-bottom: 1em;">
-										Friendship Medical Center & Pharmacy<br>
-										1396 Highway 544<br> Conway, SC 29526	
+										Friendship Medical<br />
+										Center & Pharmacy<br />
+										1396 Highway 544<br /> 
+										Conway, SC 29526	
 									</p>
 								</div>
 							</div>
-							<div class="col-4">
+							<div class="col-4 col-12-small">
 								<div>
 									<h2 class="icon solid fa-phone">  Contact</h2>
 									<p style="margin-bottom: 1em;">
-										Phone: 843-347-7199<br> Fax: 843-347-7180<br>
+										Phone: 843-347-7199<br /> Fax: 843-347-7180<br />
 										Patient Line: 843-347-7178
 									</p>
 								</div>
 								
 							</div>
-							<div class="col-4">
+							<div class="col-4 col-12-small">
 								<div>
 									<h2 class="icon fa-comment">  Hours</h2>
-									<p>
-										Clinic Hours:<br>
-										Monday - Thursday<br>8:30am - 4:00pm
+									<p style="margin-bottom: 1em;">
+										Clinic Hours:<br />
+										Monday - Thursday<br />8:30am - 4:00pm
 									</p>
 								</div>
 							</div>

@@ -35,6 +35,32 @@
 			#online.col-6 {
 				padding-right: 5em;
 			}
+
+			#img1 {
+				height: 25em;
+				width: auto;
+				margin-top: 4em;
+			}
+
+			@media screen and (max-width: 780px) {
+				.outer-flexbox {
+					flex-wrap: wrap;
+					justify-content: flex-start;
+				}
+				.outer-flexbox #img1 {
+					padding-bottom: 2em;
+					height: 18em;
+					width: auto;
+				}
+			}
+
+			@media screen and (max-width: 360px) {
+				.outer-flexbox #img1 {
+					padding-bottom: 2em;
+					height: 15em;
+					width: auto;
+				}
+			}
 		</style>
 	</head>
 	<body class="is-preload">
@@ -133,7 +159,7 @@
 														</div>
 														
 													</div>
-													<img src="images/heartbeat-6100893_1280.png" alt="" style="height: 25em;width: auto;margin-top: 4em;">
+													<img src="images/heartbeat-6100893_1280.png" id="img1" alt="" >
 												</div>
 												<div class="h-line"></div>
 												<p style="padding-top: 2em;">
@@ -178,31 +204,33 @@
 							</div>
 						</div>
 						<div class="row" id="contact-row">
-							<div class="col-4">
+							<div class="col-4 col-12-small">
 								<div>
-									<h2 class="icon solid fa-home">  Mailing Address</h2>
+									<h2 class="icon solid fa-home">  Address</h2>
 									<p style="margin-bottom: 1em;">
-										Friendship Medical Center & Pharmacy<br>
-										1396 Highway 544<br> Conway, SC 29526	
+										Friendship Medical<br />
+										Center & Pharmacy<br />
+										1396 Highway 544<br /> 
+										Conway, SC 29526	
 									</p>
 								</div>
 							</div>
-							<div class="col-4">
+							<div class="col-4 col-12-small">
 								<div>
 									<h2 class="icon solid fa-phone">  Contact</h2>
 									<p style="margin-bottom: 1em;">
-										Phone: 843-347-7199<br> Fax: 843-347-7180<br>
+										Phone: 843-347-7199<br /> Fax: 843-347-7180<br />
 										Patient Line: 843-347-7178
 									</p>
 								</div>
 								
 							</div>
-							<div class="col-4">
+							<div class="col-4 col-12-small">
 								<div>
 									<h2 class="icon fa-comment">  Hours</h2>
-									<p>
-										Clinic Hours:<br>
-										Monday - Thursday<br>8:30am - 4:00pm
+									<p style="margin-bottom: 1em;">
+										Clinic Hours:<br />
+										Monday - Thursday<br />8:30am - 4:00pm
 									</p>
 								</div>
 							</div>

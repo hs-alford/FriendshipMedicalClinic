@@ -26,7 +26,7 @@
 
 			#mission .tile {
 				max-width: 100%;
-				height: 35em;
+				height: auto;
 				background-color: #ffffff;
 				position: relative;
 			}
@@ -38,11 +38,13 @@
 			}
 			
 
-			.mission #star-icon {
-				font-size: 25em;
+			.mission #mortar-icon {
+				font-size: 35em;
 				position: absolute;
-				top: 0;
-				left: 0;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				/* left: 50%; */
 				z-index: 0;
 				display: -webkit-box;
 				/* Safari */
@@ -50,17 +52,7 @@
 				overflow: hidden;
 			}
 
-			.mission #mortar-icon {
-				font-size: 25em;
-				position: absolute;
-				bottom: 0;
-				right: 0;
-				z-index: 0;
-				display: -webkit-box;
-				/* Safari */
-				display: flex;
-				overflow: hidden;
-			}
+			
 
 			#r1 {
 				padding-top: 3em;
@@ -70,8 +62,8 @@
 			#r1 .icon {
 				font-size: 1em;
 				text-shadow:2px 2px 2px #444;
-				padding-left: 3em;
-				padding-right: 3em;
+				padding-left: 2.2em;
+				padding-right: 2.2em;
 				text-align: center;
 			}
 			
@@ -122,13 +114,14 @@
 			#donate-row h3 {
 				color: white;
 				text-transform: capitalize;
-				font-size: 2.1em;
+				font-size: 1.8em;
+				text-shadow:2px 1px 1px #444;
 			}
 
 			#donate-row a {
 				color: black;
 				background-color: white;
-				margin-left: 3em;
+				margin-left: 1em;
 			}
 			
 			#donate-row a:hover{
@@ -147,44 +140,73 @@
 
 			@media screen and (max-width: 980px) {
 
+				#r1 li {
+					position: relative;
+				}
+
 				#r1 .icon {
-					padding-left: 1.5em;
-					padding-right: 1.5em;
+					padding-left: .6em;
+					padding-right: .6em;
 				}
 
 				#banner-buttons {
 					margin-right: 5em
 				}
 
+				/* .fa-hand-holding-heart span.linktext {
+					font-size: 1.1em;
+				} */
+
+				#banner .tile {
+					padding-bottom: 3em;
+				}
+
+				#donate-row {
+					padding: 4em 0 4em 0;
+				}
+
+				#donate-row h3 {
+					display: block;
+					padding-bottom: 2em;
+				}
+
+				#donate-row a {
+					display: block;
+					margin-left: 0;
+				}	
+
 			}
 
 			@media screen and (max-width: 736px) {
-				#r1 .icon {
-					padding-left: 0;
-					padding-right: 0;
+
+				#banner .tile {
+					padding-bottom: 3em;
 				}
 
-				#r1 li {
-					position: relative;
-					padding-left: 1em;
-					padding-right: 1em;
+				#r1 .icon {
+					padding-left: 0.3em;
+					padding-right: 0.3em;
 				}
 
 				#r1 .linktext {
-					padding-top: 20px;
-					margin-bottom: 20em;
 					font-size: .8em;
-					display: block;
-					position: absolute;
-					font-weight: bolder;
-					text-align: center;
-					color: white;
-					
 				}
 
-				#r1 {
-					padding-top: 3em;
+				
+				.mission h3 {
+					color: #203e64;
+					text-align: center;
+					font-weight: bolder;
+					font-size: 3.0em;
 				}
+
+				.mission p {
+					font-weight: 500;
+					font-size: 1.5em;
+					color: #3f3f3f;
+				}
+
+				
 
 			}
 		</style>
@@ -255,7 +277,7 @@
 			</nav>
 
 			<!-- Banner -->
-			<section id="banner" style="padding-bottom:10px; margin-bottom:0; height: 40em;"> <!-- z index was at -1 -->
+			<section id="banner" style="padding-bottom:10px; margin-bottom:0; height: auto;"> <!-- z index was at -1 -->
 				<div class="content">
 					<div class="tile">
 						<!-- <i class='fas fa-heartbeat' id="banner-icon"></i> -->
@@ -295,7 +317,7 @@
 											<ul class="special">
 												<li><a href="paitentinfo.html" class="icon solid fa-notes-medical"><span class="linktext">Patient Info</span></a></li>
 												<li><a href="services.html" class="icon solid fa-stethoscope"><span class="linktext">Our Services</span></a></li>
-												<li><a href="outreach.html" class="icon solid fa-hand-holding-heart"><span class="linktext">Community Work</span></a></li>
+												<li><a href="outreach.html" class="icon solid fa-hand-holding-heart"><span class="linktext">Community</span></a></li>
 												<li><a href="contact.html" class="icon solid fa-phone-square-alt"><span class="linktext">Contact Us</span></a></li>
 											</ul>
 											
@@ -315,8 +337,8 @@
 							<div class="col-12">
 								<div class="content mission tile">
 									<section  style="text-align: center;padding-top: 5em;">
-										<i class='fas fa-star-of-life' id="star-icon" style='color:#4f88bd44;'></i>
-										<i class='fas fa-mortar-pestle' id="mortar-icon" style='color:#4f88bd44;'></i>
+										<!-- <i class='fas fa-star-of-life' id="star-icon" style='color:#4f88bd44;'></i> -->
+										<i class='fas fa-clinic-medical	' id="mortar-icon" style='color:#4f88bd44;'></i>
 
 										<h3>Our Mission</h3>
 									
@@ -345,10 +367,10 @@
 
 				<!-- ============================================== CLINIC HISTORY ROW ============================================== -->
 				
-				<div id="history-v4">
+				<div id="history-v4" style="padding-top: 4em;">
 					<div class="wrapper style3">
 						<div class="inner">
-							<div class="container-fluid" style="padding-left: 4em; padding-right: 4em;">
+							<div class="container" >
 								<div class="row">
 									<div class="col-8 col-12-medium">
 	
@@ -579,7 +601,7 @@
 				<div class="container-fluid" style="background-color: #452a55;padding-top: 0;margin-top:0;">
 					<div class="container">
 						<div id="donate-row">
-							<h3 style="font-style: italic;">Help us continue to provide care to our community.</h3>
+							<h3 style="font-style: normal;font-weight: bold;word-spacing: 4px;">Help us continue to provide care to our community.</h3>
 							<a href="donate.html" class="button alt">Donate</a>
 						</div>
 					</div>
@@ -604,31 +626,33 @@
 							</div>
 						</div>
 						<div class="row" id="contact-row">
-							<div class="col-4">
+							<div class="col-4 col-12-small">
 								<div>
-									<h2 class="icon solid fa-home">  Mailing Address</h2>
+									<h2 class="icon solid fa-home">  Address</h2>
 									<p style="margin-bottom: 1em;">
-										Friendship Medical Center & Pharmacy<br>
-										1396 Highway 544<br> Conway, SC 29526	
+										Friendship Medical<br />
+										Center & Pharmacy<br />
+										1396 Highway 544<br /> 
+										Conway, SC 29526	
 									</p>
 								</div>
 							</div>
-							<div class="col-4">
+							<div class="col-4 col-12-small">
 								<div>
 									<h2 class="icon solid fa-phone">  Contact</h2>
 									<p style="margin-bottom: 1em;">
-										Phone: 843-347-7199<br> Fax: 843-347-7180<br>
+										Phone: 843-347-7199<br /> Fax: 843-347-7180<br />
 										Patient Line: 843-347-7178
 									</p>
 								</div>
 								
 							</div>
-							<div class="col-4">
+							<div class="col-4 col-12-small">
 								<div>
 									<h2 class="icon fa-comment">  Hours</h2>
-									<p>
-										Clinic Hours:<br>
-										Monday - Thursday<br>8:30am - 4:00pm
+									<p style="margin-bottom: 1em;">
+										Clinic Hours:<br />
+										Monday - Thursday<br />8:30am - 4:00pm
 									</p>
 								</div>
 							</div>

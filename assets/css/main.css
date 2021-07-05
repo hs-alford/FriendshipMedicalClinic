@@ -2080,7 +2080,7 @@ input, select, textarea {
 					-webkit-transition: background-color .2s ease-in-out;
 					-ms-transition: background-color .2s ease-in-out;
 					transition: background-color .2s ease-in-out;
-					display: block;
+					/* display: block; */
 					text-align: center;
 					background: #c1cac5;
 					border-radius: 100%;
@@ -2709,7 +2709,7 @@ input, select, textarea {
 						background-size: auto, 100% 250%;
 						background-repeat: repeat, no-repeat;
 						text-align: center;
-						margin: 0 4em 0 4em;
+						margin: 0 0 0 0;
 						padding: 3em 1em 2em 1em;
 					}
 			
@@ -2802,6 +2802,11 @@ input, select, textarea {
 	}
 
 /* Sidebar + Content */
+
+	.sidebar {
+		padding-top: 4em;
+		padding-bottom: 4em;
+	}
 
 	.sidebar h2.major {
 		text-align: left;
@@ -3411,7 +3416,7 @@ input, select, textarea {
 				}
 
 					ul.special li a:before {
-						font-size: 28px;
+						font-size: 40px;
 					}
 
 		/* Box */
@@ -3447,7 +3452,7 @@ input, select, textarea {
 			}*/
 
 				#banner .content {
-					padding: .5em 2.5em 3em 2.5em;
+					padding: .5em 1em 3em 1em;
 					
 				} 
 
@@ -3527,6 +3532,32 @@ input, select, textarea {
 
 			#footer-clinic {
 				padding-top:3em;
+			}
+
+			#footer #contact-row {
+				background-color: #203e64;
+				vertical-align: middle;
+				line-height: 1.9;
+			}
+		
+			#footer #contact-row .col-4 {
+				display: flex;
+				justify-content: flex-start;
+				padding-left: 25%;
+			}
+		
+			#footer #contact-row p {
+				color: rgba(255, 255, 255, 0.603);
+				text-align: justify;
+				font-weight: normal;
+				
+			}
+		
+			#footer #contact-row h2 {
+				color: white;
+				text-align: justify;
+				font-size: 1.5em;
+				font-weight: bold;
 			}
 
 		/* Copyright */
